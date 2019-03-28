@@ -30,11 +30,13 @@ namespace bBall //This form displays a baseball teams number of wins through yea
         private void rBaseballTeams()
         {   //decarling streamreader variable
             StreamReader inputFile;
+            //opens teams.txt file
             inputFile = File.OpenText("Teams.txt");
-
+            //variable to hold number of items stores in the array
             int lines = 0;
+            //end of file is reached
             while (!inputFile.EndOfStream)
-            {
+            {   //adding item
                 teamsListBox.Items.Add(inputFile.ReadLine());
                 lines++;
             }
