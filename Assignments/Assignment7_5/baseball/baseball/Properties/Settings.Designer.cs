@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace test123.Properties
+namespace baseball.Properties
 {
 
 
