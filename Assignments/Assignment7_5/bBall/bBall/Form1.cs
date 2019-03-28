@@ -23,6 +23,7 @@ namespace bBall
         private void worldSeriesChampions_Load(object sender, EventArgs e)
         {
             rBaseballTeams();
+           
             
         }
 
@@ -37,6 +38,18 @@ namespace bBall
                 teamsListBox.Items.Add(inputFile.ReadLine());
                 lines++;
             }
+
+            baseballTeams = new string[lines];
+
+            inputFile = File.OpenText("Teams.txt");
+
+            int index = 0;
+            while (index < baseballTeams.Length && !inputFile.EndOfStream)
+            {
+                baseballTeams[index] = inputFile.ReadLine();
+                index++;
+            }
+            inputFile.Close();
         }
 
         private void teamsListBox_SelectedIndexChanged(object sender, EventArgs e)
