@@ -82,9 +82,10 @@ namespace bBall //This form displays a baseball teams number of wins through yea
         }
         //outputs asdf and wins to the winnerslabel textbox. 
         private void teamsListBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        {   
             string asdf = teamsListBox.SelectedItem.ToString();
             int wins = 0;
+            //writes the array's content to the file
             for (int index = 0; index < winnerTeams.Length; index++)
             {
                 if (asdf == winnerTeams[index])
