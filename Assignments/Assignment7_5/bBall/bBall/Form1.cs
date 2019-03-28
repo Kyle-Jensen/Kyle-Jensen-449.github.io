@@ -16,5 +16,8 @@ namespace bBall
         {
             InitializeComponent();
         }
+
+        string[] baseballTeams;
+        string[] winnerTeams;
     }
 }
