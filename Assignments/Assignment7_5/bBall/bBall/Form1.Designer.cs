@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.teamslistBox = new System.Windows.Forms.ListBox();
+            this.teamsListBox = new System.Windows.Forms.ListBox();
             this.winnersLabel = new System.Windows.Forms.Label();
             this.ClearButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // teamslistBox
+            // teamsListBox
             // 
-            this.teamslistBox.FormattingEnabled = true;
-            this.teamslistBox.Location = new System.Drawing.Point(12, 12);
-            this.teamslistBox.Name = "teamslistBox";
-            this.teamslistBox.Size = new System.Drawing.Size(104, 420);
-            this.teamslistBox.TabIndex = 0;
+            this.teamsListBox.FormattingEnabled = true;
+            this.teamsListBox.Location = new System.Drawing.Point(12, 12);
+            this.teamsListBox.Name = "teamsListBox";
+            this.teamsListBox.Size = new System.Drawing.Size(104, 420);
+            this.teamsListBox.TabIndex = 0;
             // 
             // winnersLabel
             // 
@@ -65,16 +65,17 @@
             this.ClientSize = new System.Drawing.Size(415, 450);
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.winnersLabel);
-            this.Controls.Add(this.teamslistBox);
+            this.Controls.Add(this.teamsListBox);
             this.Name = "worldSeriesChampions";
             this.Text = "World Series Champions";
+            this.Load += new System.EventHandler(this.worldSeriesChampions_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListBox teamslistBox;
+        private System.Windows.Forms.ListBox teamsListBox;
         private System.Windows.Forms.Label winnersLabel;
         private System.Windows.Forms.Button ClearButton;
     }
