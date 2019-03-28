@@ -22,7 +22,21 @@ namespace bBall
 
         private void worldSeriesChampions_Load(object sender, EventArgs e)
         {
+          
+        }
 
+        private void teamsListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string asdf = teamsListBox.SelectedItem.ToString();
+            int wins = 0;
+            for (int i = 0; i < winnerTeams.Length; i++)
+            {
+                if (asdf == winnerTeams[i])
+                {
+                    wins++;
+                }
+            }
+            winnersLabel.Text = asdf + " won " + wins + " times from 1903 -2012.";
         }
     }
 }

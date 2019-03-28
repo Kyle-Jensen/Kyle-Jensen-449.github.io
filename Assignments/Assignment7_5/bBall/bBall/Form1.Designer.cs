@@ -40,6 +40,7 @@
             this.teamsListBox.Name = "teamsListBox";
             this.teamsListBox.Size = new System.Drawing.Size(104, 420);
             this.teamsListBox.TabIndex = 0;
+            this.teamsListBox.SelectedIndexChanged += new System.EventHandler(this.teamsListBox_SelectedIndexChanged);
             // 
             // winnersLabel
             // 
