@@ -22,7 +22,21 @@ namespace bBall
 
         private void worldSeriesChampions_Load(object sender, EventArgs e)
         {
-          
+            rBaseballTeams();
+            
+        }
+
+        private void rBaseballTeams()
+        {
+            StreamReader inputFile;
+            inputFile = File.OpenText("Teams.txt");
+
+            int lines = 0;
+            while (!inputFile.EndOfStream)
+            {
+                teamsListBox.Items.Add(inputFile.ReadLine());
+                lines++;
+            }
         }
 
         private void teamsListBox_SelectedIndexChanged(object sender, EventArgs e)
