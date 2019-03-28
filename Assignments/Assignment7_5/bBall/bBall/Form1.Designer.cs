@@ -1,6 +1,6 @@
 ﻿namespace bBall
 {
-    partial class Form1
+    partial class worldSeriesChampions
     {
         /// <summary>
         /// Required designer variable.
@@ -58,7 +58,7 @@
             this.ClearButton.Text = "Clear";
             this.ClearButton.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // worldSeriesChampions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -66,8 +66,8 @@
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.winnersLabel);
             this.Controls.Add(this.teamslistBox);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "worldSeriesChampions";
+            this.Text = "World Series Champions";
             this.ResumeLayout(false);
 
         }

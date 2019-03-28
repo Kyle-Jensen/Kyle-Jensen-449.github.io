@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace bBall
 {
-    public partial class Form1 : Form
+    public partial class worldSeriesChampions : Form
     {
-        public Form1()
+        public worldSeriesChampions()
         {
             InitializeComponent();
         }
