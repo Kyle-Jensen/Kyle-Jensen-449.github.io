@@ -19,16 +19,16 @@ namespace bBall //This form displays a baseball teams number of wins through yea
         //creating an array for two variables
         string[] baseballTeams;
         string[] winnerTeams;
-        //
+        //The form event handler. declaring two variables
         private void worldSeriesChampions_Load(object sender, EventArgs e)
         {
             rBaseballTeams();
             rWinnerTeams();
             
         }
-
+        //this method rBaseballTeams reads and grabs data from the Teams.txt file to show on the teamsListBox 
         private void rBaseballTeams()
-        {
+        {   //decarling streamreader variable
             StreamReader inputFile;
             inputFile = File.OpenText("Teams.txt");
 
