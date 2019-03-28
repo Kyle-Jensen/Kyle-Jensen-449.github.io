@@ -69,32 +69,32 @@ namespace bBall //This form displays a baseball teams number of wins through yea
             }
 
             winnerTeams = new string[lines];
-
+            //opens worldserieswinners.txt file
             inputFile = File.OpenText("WorldSeriesWinners.txt");
 
             int index = 0;
-            while (index < winnerTeams.Length && !inputFile.EndOfStream)
+            while (index < winnerTeams.Length && !inputFile.EndOfStream) //reads worldserieswinners.txt into the array
             {
                 winnerTeams[index] = inputFile.ReadLine();
                 index++;
             }
-            inputFile.Close();
+            inputFile.Close(); //closes file
         }
-
+        //outputs asdf and wins to the winnerslabel textbox. 
         private void teamsListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             string asdf = teamsListBox.SelectedItem.ToString();
             int wins = 0;
-            for (int i = 0; i < winnerTeams.Length; i++)
+            for (int index = 0; index < winnerTeams.Length; index++)
             {
-                if (asdf == winnerTeams[i])
+                if (asdf == winnerTeams[index])
                 {
                     wins++;
                 }
             }
             winnersLabel.Text = asdf + " won " + wins + " times from 1903 -2012.";
         }
-
+        //clears out winnersLabel
         private void ClearButton_Click(object sender, EventArgs e)
         {
             winnersLabel.Text = "";
