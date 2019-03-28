@@ -90,5 +90,10 @@ namespace bBall
             }
             winnersLabel.Text = asdf + " won " + wins + " times from 1903 -2012.";
         }
+
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            winnersLabel.Text = "";
+        }
     }
 }
