@@ -26,7 +26,7 @@ namespace bBall //This form displays a baseball teams number of wins through yea
             rWinnerTeams();
             
         }
-        //this method rBaseballTeams reads and grabs data from the Teams.txt file to show on the teamsListBox 
+        //this method rBaseballTeams reads and grabs data from the Teams.txt file to show on the teamsListBox and winnersLabel
         private void rBaseballTeams()
         {   //decarling streamreader variable
             StreamReader inputFile;
@@ -47,19 +47,21 @@ namespace bBall //This form displays a baseball teams number of wins through yea
             //variable to hold number of items stores in the array
             int index = 0;
             while (index < baseballTeams.Length && !inputFile.EndOfStream) //reads teams.txt into the array
-            {   
+            {   //assigning teams.txt for the array
                 baseballTeams[index] = inputFile.ReadLine();
                 index++;
             }
             inputFile.Close();  //closes file
         }
-
+        //this method rWinnerTearms reads and grabs data from the WorldSeriesWinners.txt file to show on the winnersLabel
         private void rWinnerTeams()
-        {
+        {   //decarling streamreader variable
             StreamReader inputFile;
+            //opens worldserieswinners.txt file
             inputFile = File.OpenText("WorldSeriesWinners.txt");
-
+            //variable to hold number of items stores in the array
             int lines = 0;
+            //end of file is reached
             while (!inputFile.EndOfStream)
             {
                 inputFile.ReadLine();
