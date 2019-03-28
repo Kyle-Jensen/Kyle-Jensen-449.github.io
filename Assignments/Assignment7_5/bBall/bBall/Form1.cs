@@ -8,18 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-namespace bBall
-{
+namespace bBall //This form displays a baseball teams number of wins through years 1903 and 2012
+{   
     public partial class worldSeriesChampions : Form
     {
         public worldSeriesChampions()
         {
             InitializeComponent();
         }
-
+        //creating an array for two variables
         string[] baseballTeams;
         string[] winnerTeams;
-
+        //
         private void worldSeriesChampions_Load(object sender, EventArgs e)
         {
             rBaseballTeams();
