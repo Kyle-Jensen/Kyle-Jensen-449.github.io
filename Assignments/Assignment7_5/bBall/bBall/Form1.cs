@@ -42,16 +42,16 @@ namespace bBall //This form displays a baseball teams number of wins through yea
             }
 
             baseballTeams = new string[lines];
-
+            //opens teams.txt file
             inputFile = File.OpenText("Teams.txt");
-
+            //variable to hold number of items stores in the array
             int index = 0;
-            while (index < baseballTeams.Length && !inputFile.EndOfStream)
-            {
+            while (index < baseballTeams.Length && !inputFile.EndOfStream) //reads teams.txt into the array
+            {   
                 baseballTeams[index] = inputFile.ReadLine();
                 index++;
             }
-            inputFile.Close();
+            inputFile.Close();  //closes file
         }
 
         private void rWinnerTeams()
