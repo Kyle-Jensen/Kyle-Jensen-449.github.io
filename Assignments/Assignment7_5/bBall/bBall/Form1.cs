@@ -23,7 +23,7 @@ namespace bBall
         private void worldSeriesChampions_Load(object sender, EventArgs e)
         {
             rBaseballTeams();
-           
+            rWinnerTeams();
             
         }
 
@@ -47,6 +47,31 @@ namespace bBall
             while (index < baseballTeams.Length && !inputFile.EndOfStream)
             {
                 baseballTeams[index] = inputFile.ReadLine();
+                index++;
+            }
+            inputFile.Close();
+        }
+
+        private void rWinnerTeams()
+        {
+            StreamReader inputFile;
+            inputFile = File.OpenText("WorldSeriesWinners.txt");
+
+            int lines = 0;
+            while (!inputFile.EndOfStream)
+            {
+                inputFile.ReadLine();
+                lines++;
+            }
+
+            winnerTeams = new string[lines];
+
+            inputFile = File.OpenText("WorldSeriesWinners.txt");
+
+            int index = 0;
+            while (index < winnerTeams.Length && !inputFile.EndOfStream)
+            {
+                winnerTeams[index] = inputFile.ReadLine();
                 index++;
             }
             inputFile.Close();
