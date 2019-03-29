@@ -33,7 +33,7 @@ namespace BoyandGirl
 
             int lines = 0;
 
-            while (!inputFile.EndofStream)
+            while (!inputFile.EndOfStream)
             {
                 inputFile.ReadLine();
                 lines++;
@@ -41,6 +41,12 @@ namespace BoyandGirl
             gName = new string[lines];
 
             inputFile = File.OpenText("GirlNames.txt");
+            int index = 0;
+            while (index < gName.Length && !inputFile.EndOfStream)
+            {
+                gName[index] = inputFile.ReadLine();
+                index++;
+            }
 
         }
     }
