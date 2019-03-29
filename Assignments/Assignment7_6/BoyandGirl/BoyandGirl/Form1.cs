@@ -47,7 +47,25 @@ namespace BoyandGirl
                 gName[index] = inputFile.ReadLine();
                 index++;
             }
+            inputFile.Close();
+
 
         }
+        private void rBName()
+        {
+            StreamReader inputFile;
+            inputFile = File.OpenText("BoyNames.txt");
+
+            int lines = 0;
+            while (!inputFile.EndOfStream)
+            {
+                inputFile.ReadLine();
+                lines++;
+                
+            }
+        }
+        
+        
+
     }
 }
