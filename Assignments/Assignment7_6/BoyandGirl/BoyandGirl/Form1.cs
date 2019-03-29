@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace BoyandGirl
 {
-    public partial class Form1 : Form
+    public partial class boyAndGirlForm : Form
     {
-        public Form1()
+        public boyAndGirlForm()
         {
             InitializeComponent();
+        }
+
+        private void boyAndGirlForm_Load(object sender, EventArgs e)
+        {
+            gName();
+            bName();
+        }
+
+        private void rGName()
+        {
+            stream
         }
     }
 }
