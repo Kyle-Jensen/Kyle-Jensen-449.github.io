@@ -63,6 +63,18 @@ namespace BoyandGirl
                 lines++;
                 
             }
+
+            bName = new string[lines];
+
+            inputFile = File.OpenText("BoyNames.txt");
+            int index = 0;
+            while (index < bName.Length && !inputFile.EndOfStream)
+            {
+                bName[index] = inputFile.ReadLine();
+                index++;
+            }
+
+            inputFile.Close();
         }
         
         
