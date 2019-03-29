@@ -42,43 +42,47 @@ namespace BoyandGirl //this form allows a user to pic a name, then it outputs st
             gName = new string[lines];
             //opens file
             inputFile = File.OpenText("GirlNames.txt");
-            //variable to hold number of items sotres in the array
+            //variable to hold number of items stores in the array
             int index = 0;
             while (index < gName.Length && !inputFile.EndOfStream)
-            {
+            {   //assigning text for the array
                 gName[index] = inputFile.ReadLine();
                 index++;
             }
-            inputFile.Close();
+            inputFile.Close(); //closes file
 
 
         }
+        //this method reades and grabes data from boynames.txt file
         private void rBName()
-        {
+        {   //declaring streamreader variable
             StreamReader inputFile;
+            //opens file
             inputFile = File.OpenText("BoyNames.txt");
-
+            //varialbe to hold number of items in the array
             int lines = 0;
+            //end of file is reached
             while (!inputFile.EndOfStream)
-            {
+            {   //adding item
                 inputFile.ReadLine();
                 lines++;
                 
             }
 
             bName = new string[lines];
-
+            //opens file
             inputFile = File.OpenText("BoyNames.txt");
+            //variable to hold number of items stores in the array
             int index = 0;
             while (index < bName.Length && !inputFile.EndOfStream)
-            {
+            {   //assigning text for the array
                 bName[index] = inputFile.ReadLine();
                 index++;
             }
 
-            inputFile.Close();
+            inputFile.Close(); //closes file
         }
-
+        //purpose of this method is to display the data from both of the text files and show if the names are popular or not popular
         private void goButton_Click(object sender, EventArgs e)
         {
             boyGirlLabel.Text = "";
