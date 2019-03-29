@@ -25,7 +25,12 @@ namespace BoyandGirl
 
         private void rGName()
         {
-            stream
+            StreamReader inputFile;
+            inputFile = File.OpenText("GirlNames.txt");
+
+            int lines = 0;
+
+            while (!inputeFile.EndofStream)
         }
     }
 }
