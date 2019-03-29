@@ -81,6 +81,28 @@ namespace BoyandGirl
         {
             boyGirlLabel.Text = "";
 
+            if (boyTextbox.Text != "")
+            {
+                Boolean pBName = false;
+                for (int index = 0; index < bName.Length; index++)
+                {
+                    if (bName[index] == boyTextbox.Text)
+                    {
+                        pBName = true;
+                        break;
+                    }
+                }
+
+                if (pBName == true)
+                {
+                    boyGirlLabel.Text += boyTextbox.Text + " is a popular boy name.\n";
+                }
+                else
+                {
+                    boyTextbox.Text += boyTextbox.Text + " is not a popular boy name.\n";
+                }
+            }
+
             if (girlTextbox.Text != "")
             {
                 Boolean pGName = false;
@@ -92,38 +114,13 @@ namespace BoyandGirl
                         break;
                     }
                 }
-
                 if (pGName == true)
                 {
-                    boyGirlLabel.Text += girlTextbox.Text + " is a popular girl name. \n";
-
+                    boyGirlLabel.Text += girlTextbox.Text + " is a popular girl name.\n";
                 }
                 else
                 {
-                    boyGirlLabel.Text += girlTextbox.Text + " is not a popular girl name. \n";
-                }
-
-
-            }
-
-            if (boyTextbox.Text != "")
-            {
-                Boolean pBoyName = false;
-                for (int index = 0; index < bName.Length; index++)
-                {
-                    if (bName[index] == boyTextbox.Text)
-                    {
-                        pBoyName = true;
-                        break;
-                    }
-                    if (pBoyName == true)
-                    {
-                        boyGirlLabel.Text += boyTextbox.Text + " is a popular boy name. \n";
-                    }
-                    else
-                    {
-                        boyGirlLabel.Text += boyTextbox.Text + " is not a popular boy name. \n";
-                    }
+                    boyGirlLabel.Text += girlTextbox.Text + " is not a popular girl name.\n";
                 }
             }
         }
