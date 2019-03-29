@@ -25,22 +25,24 @@ namespace BoyandGirl //this form allows a user to pic a name, then it outputs st
             rGName();
             rBName();
         }
-        //this method readges and grabs data from the girlsname.txt file
+        //this method reades and grabs data from the girlsname.txt file
         private void rGName()
-        {   //ss
+        {   //declaring streamreader variable
             StreamReader inputFile;
+            //opens the file
             inputFile = File.OpenText("GirlNames.txt");
-
+            //variable to hold number of items stores in the array
             int lines = 0;
-
+            //end of file is reached
             while (!inputFile.EndOfStream)
-            {
+            {   //adding item
                 inputFile.ReadLine();
                 lines++;
             }
             gName = new string[lines];
-
+            //opens file
             inputFile = File.OpenText("GirlNames.txt");
+            //variable to hold number of items sotres in the array
             int index = 0;
             while (index < gName.Length && !inputFile.EndOfStream)
             {
