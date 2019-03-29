@@ -31,7 +31,7 @@ namespace bBall //This form displays a baseball teams number of wins through yea
         {   //decarling streamreader variable
             StreamReader inputFile;
             //opens teams.txt file
-            inputFile = File.OpenText("Teams.txt");
+            inputFile = File.OpenText(@"../../../../../txt/Teams.txt");
             //variable to hold number of items stores in the array
             int lines = 0;
             //end of file is reached
@@ -43,7 +43,7 @@ namespace bBall //This form displays a baseball teams number of wins through yea
 
             baseballTeams = new string[lines];
             //opens teams.txt file
-            inputFile = File.OpenText("Teams.txt");
+            inputFile = File.OpenText(@"../../../../../txt/Teams.txt");
             //variable to hold number of items stores in the array
             int index = 0;
             while (index < baseballTeams.Length && !inputFile.EndOfStream) //reads teams.txt into the array
@@ -58,7 +58,7 @@ namespace bBall //This form displays a baseball teams number of wins through yea
         {   //decarling streamreader variable
             StreamReader inputFile;
             //opens worldserieswinners.txt file
-            inputFile = File.OpenText("WorldSeriesWinners.txt");
+            inputFile = File.OpenText(@"../../../../../txt/WorldSeriesWinners.txt");
             //variable to hold number of items stores in the array
             int lines = 0;
             //end of file is reached
@@ -70,7 +70,7 @@ namespace bBall //This form displays a baseball teams number of wins through yea
 
             winnerTeams = new string[lines];
             //opens worldserieswinners.txt file
-            inputFile = File.OpenText("WorldSeriesWinners.txt");
+            inputFile = File.OpenText(@"../../../../../txt/WorldSeriesWinners.txt");
 
             int index = 0;
             while (index < winnerTeams.Length && !inputFile.EndOfStream) //reads worldserieswinners.txt into the array

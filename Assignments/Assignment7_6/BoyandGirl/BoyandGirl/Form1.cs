@@ -30,7 +30,7 @@ namespace BoyandGirl //this form allows a user to pic a name, then it outputs st
         {   //declaring streamreader variable
             StreamReader inputFile;
             //opens the file
-            inputFile = File.OpenText("GirlNames.txt");
+            inputFile = File.OpenText(@"../../../../../txt/GirlNames.txt");
             //variable to hold number of items stores in the array
             int lines = 0;
             //end of file is reached
@@ -41,7 +41,7 @@ namespace BoyandGirl //this form allows a user to pic a name, then it outputs st
             }
             gName = new string[lines];
             //opens file
-            inputFile = File.OpenText("GirlNames.txt");
+            inputFile = File.OpenText(@"../../../../../txt/GirlNames.txt");
             //variable to hold number of items stores in the array
             int index = 0;
             while (index < gName.Length && !inputFile.EndOfStream)
@@ -58,7 +58,7 @@ namespace BoyandGirl //this form allows a user to pic a name, then it outputs st
         {   //declaring streamreader variable
             StreamReader inputFile;
             //opens file
-            inputFile = File.OpenText("BoyNames.txt");
+            inputFile = File.OpenText(@"../../../../../txt/BoyNames.txt");
             //varialbe to hold number of items in the array
             int lines = 0;
             //end of file is reached
@@ -71,7 +71,7 @@ namespace BoyandGirl //this form allows a user to pic a name, then it outputs st
 
             bName = new string[lines];
             //opens file
-            inputFile = File.OpenText("BoyNames.txt");
+            inputFile = File.OpenText(@"../../../../../txt/BoyNames.txt");
             //variable to hold number of items stores in the array
             int index = 0;
             while (index < bName.Length && !inputFile.EndOfStream)
