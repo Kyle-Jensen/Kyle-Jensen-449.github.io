@@ -84,9 +84,9 @@ namespace BoyandGirl //this form allows a user to pic a name, then it outputs st
         }
         //purpose of this method is to display the data from both of the text files and show if the names are popular or not popular
         private void goButton_Click(object sender, EventArgs e)
-        {
+        {   //to clear
             boyGirlLabel.Text = "";
-
+            //is popular boy name is false, then not a popular name
             if (boyTextbox.Text != "")
             {
                 Boolean pBName = false;
@@ -95,10 +95,10 @@ namespace BoyandGirl //this form allows a user to pic a name, then it outputs st
                     if (bName[index] == boyTextbox.Text)
                     {
                         pBName = true;
-                        break;
+                        
                     }
                 }
-
+                //if popular boy name is true, then popular 
                 if (pBName == true)
                 {
                     boyGirlLabel.Text += boyTextbox.Text + " is a popular boy name.\n";
@@ -108,18 +108,18 @@ namespace BoyandGirl //this form allows a user to pic a name, then it outputs st
                     boyTextbox.Text += boyTextbox.Text + " is not a popular boy name.\n";
                 }
             }
-
+            //if popular girl name is false, then not a popular name
             if (girlTextbox.Text != "")
-            {
+            {  
                 Boolean pGName = false;
                 for (int index = 0; index < gName.Length; index++)
                 {
                     if (gName[index] == girlTextbox.Text)
                     {
                         pGName = true;
-                        break;
+                        
                     }
-                }
+                }//if popular girl name is true, then popular name
                 if (pGName == true)
                 {
                     boyGirlLabel.Text += girlTextbox.Text + " is a popular girl name.\n";
@@ -130,7 +130,7 @@ namespace BoyandGirl //this form allows a user to pic a name, then it outputs st
                 }
             }
         }
-
+        //clear button method
         private void clearButton_Click(object sender, EventArgs e)
         {
             boyGirlLabel.Text = "";
