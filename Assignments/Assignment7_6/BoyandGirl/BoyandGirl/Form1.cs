@@ -17,10 +17,13 @@ namespace BoyandGirl
             InitializeComponent();
         }
 
+        string[] gName;
+        string[] bName;
+
         private void boyAndGirlForm_Load(object sender, EventArgs e)
         {
-            gName();
-            bName();
+            rGName();
+            rBName();
         }
 
         private void rGName()
@@ -30,7 +33,15 @@ namespace BoyandGirl
 
             int lines = 0;
 
-            while (!inputeFile.EndofStream)
+            while (!inputFile.EndofStream)
+            {
+                inputFile.ReadLine();
+                lines++;
+            }
+            gName = new string[lines];
+
+            inputFile = File.OpenText("GirlNames.txt");
+
         }
     }
 }
