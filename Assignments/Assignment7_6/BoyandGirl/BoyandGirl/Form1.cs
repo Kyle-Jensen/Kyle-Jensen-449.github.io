@@ -105,7 +105,7 @@ namespace BoyandGirl //this form allows a user to pic a name, then it outputs st
                 }
                 else
                 {
-                    boyTextbox.Text += boyTextbox.Text + " is not a popular boy name.\n";
+                    boyGirlLabel.Text += boyTextbox.Text + " is not a popular boy name.\n";
                 }
             }
             //if popular girl name is false, then not a popular name
