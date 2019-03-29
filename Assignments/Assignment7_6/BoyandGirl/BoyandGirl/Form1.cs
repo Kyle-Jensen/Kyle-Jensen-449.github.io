@@ -76,8 +76,28 @@ namespace BoyandGirl
 
             inputFile.Close();
         }
-        
-        
 
+        private void goButton_Click(object sender, EventArgs e)
+        {
+            boyGirlLabel.Text = "";
+
+            if (boyTextbox.Text != "")
+            {
+                Boolean pGName = false;
+                for (int index = 0; index < gName.Length; index++)
+                {
+                    if (gName[index] == boyTextbox.Text)
+                    {
+                        pGName = true;
+                        break;
+                    }
+                }
+
+                if (pGName == true)
+                {
+
+                }
+            }
+        }
     }
 }

@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.girlTextbox = new System.Windows.Forms.TextBox();
+            this.boyTextbox = new System.Windows.Forms.TextBox();
             this.boyGirlLabel = new System.Windows.Forms.Label();
             this.goButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
@@ -55,19 +55,19 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Girl\'s Name";
             // 
-            // textBox1
+            // girlTextbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(170, 48);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(140, 20);
-            this.textBox1.TabIndex = 2;
+            this.girlTextbox.Location = new System.Drawing.Point(170, 48);
+            this.girlTextbox.Name = "girlTextbox";
+            this.girlTextbox.Size = new System.Drawing.Size(140, 20);
+            this.girlTextbox.TabIndex = 2;
             // 
-            // textBox2
+            // boyTextbox
             // 
-            this.textBox2.Location = new System.Drawing.Point(24, 48);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(140, 20);
-            this.textBox2.TabIndex = 3;
+            this.boyTextbox.Location = new System.Drawing.Point(24, 48);
+            this.boyTextbox.Name = "boyTextbox";
+            this.boyTextbox.Size = new System.Drawing.Size(140, 20);
+            this.boyTextbox.TabIndex = 3;
             // 
             // boyGirlLabel
             // 
@@ -85,6 +85,7 @@
             this.goButton.TabIndex = 5;
             this.goButton.Text = "Go";
             this.goButton.UseVisualStyleBackColor = true;
+            this.goButton.Click += new System.EventHandler(this.goButton_Click);
             // 
             // clearButton
             // 
@@ -103,8 +104,8 @@
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.goButton);
             this.Controls.Add(this.boyGirlLabel);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.boyTextbox);
+            this.Controls.Add(this.girlTextbox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "boyAndGirlForm";
@@ -119,8 +120,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox girlTextbox;
+        private System.Windows.Forms.TextBox boyTextbox;
         private System.Windows.Forms.Label boyGirlLabel;
         private System.Windows.Forms.Button goButton;
         private System.Windows.Forms.Button clearButton;
