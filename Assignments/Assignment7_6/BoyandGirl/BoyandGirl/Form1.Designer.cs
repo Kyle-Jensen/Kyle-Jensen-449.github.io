@@ -74,7 +74,7 @@
             this.boyGirlLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.boyGirlLabel.Location = new System.Drawing.Point(30, 89);
             this.boyGirlLabel.Name = "boyGirlLabel";
-            this.boyGirlLabel.Size = new System.Drawing.Size(280, 69);
+            this.boyGirlLabel.Size = new System.Drawing.Size(280, 36);
             this.boyGirlLabel.TabIndex = 4;
             // 
             // goButton
@@ -95,6 +95,7 @@
             this.clearButton.TabIndex = 6;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // boyAndGirlForm
             // 
