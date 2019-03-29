@@ -102,6 +102,29 @@ namespace BoyandGirl
                 {
                     boyGirlLabel.Text += girlTextbox.Text + " is not a popular girl name. \n";
                 }
+
+
+            }
+
+            if (boyTextbox.Text != "")
+            {
+                Boolean pBoyName = false;
+                for (int index = 0; index < bName.Length; index++)
+                {
+                    if (bName[index] == boyTextbox.Text)
+                    {
+                        pBoyName = true;
+                        break;
+                    }
+                    if (pBoyName == true)
+                    {
+                        boyGirlLabel.Text += boyTextbox.Text + " is a popular boy name. \n";
+                    }
+                    else
+                    {
+                        boyGirlLabel.Text += boyTextbox.Text + " is not a popular boy name. \n";
+                    }
+                }
             }
         }
     }
