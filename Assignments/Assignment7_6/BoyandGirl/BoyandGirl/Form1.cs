@@ -81,12 +81,12 @@ namespace BoyandGirl
         {
             boyGirlLabel.Text = "";
 
-            if (boyTextbox.Text != "")
+            if (girlTextbox.Text != "")
             {
                 Boolean pGName = false;
                 for (int index = 0; index < gName.Length; index++)
                 {
-                    if (gName[index] == boyTextbox.Text)
+                    if (gName[index] == girlTextbox.Text)
                     {
                         pGName = true;
                         break;
@@ -95,7 +95,12 @@ namespace BoyandGirl
 
                 if (pGName == true)
                 {
+                    boyGirlLabel.Text += girlTextbox.Text + " is a popular girl name. \n";
 
+                }
+                else
+                {
+                    boyGirlLabel.Text += girlTextbox.Text + " is not a popular girl name. \n";
                 }
             }
         }
