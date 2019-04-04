@@ -74,37 +74,37 @@ namespace Vending_Machine
 
             }
         }
-
+        //method for cola, references case 0
         private void colaPictureBox_Click(object sender, EventArgs e)
         {
             index = 0;
             sold_out();
         }
-
+        //method for root beer, references case 1
         private void rootBeerPictureBox_Click(object sender, EventArgs e)
         {
             index = 1;
             sold_out();
         }
-
+        //method for lemon lime references case 2
         private void lemonLimePictureBox_Click(object sender, EventArgs e)
         {
             index = 2;
             sold_out();
         }
-
+        //method for grade soda, references case 3
         private void grapeSodaPictureBox_Click(object sender, EventArgs e)
         {
             index = 3;
             sold_out();
         }
-
+        //method for cream soda, references case 4
         private void creamSodaPictureBox_Click(object sender, EventArgs e)
         {
             index = 4;
             sold_out();
         }
-
+        //method closes form
         private void exitButton_Click(object sender, EventArgs e)
         {
             this.Close();
