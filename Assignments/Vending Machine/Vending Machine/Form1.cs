@@ -19,38 +19,38 @@ namespace Vending_Machine
         public int drinkNumber;
     }
 
-
+    //method for the form
     public partial class vendingMachine : Form
     {
         public vendingMachine()
         {
             InitializeComponent();
         }
-
+        //strining all the soda together by ,
         string[,] soda = new string[,] { {"Cola", "1.00", "20"}, {"Root Beer", "1.00", "20"}, {"Lemon Lime", "1.00", "20"}, {"Grape Soda", "1.50", "20"}, {"Cream Soda", "1.50", "20"} };
 
-        double total_sales = 0.00;
-        drinkInput entry = new drinkInput();
-        int index;
-
+        double total_sales = 0.00; //declaring double variable
+        drinkInput entry = new drinkInput(); //creating an instance of the drinkinput stuct
+        int index; //declaring int variable
+        //loads the form
         private void vendingMachine_Load(object sender, EventArgs e)
         {
 
         }
 
-
+        //this method calculates the decreasement of quantity and total sales
         private void sold_out()
-        {
+        {   //stores soda in the entry object
             entry.name = soda[index, 0];
             entry.price = soda[index, 1];
             entry.drinkNumber = int.Parse(soda[index, 2]);
-
+            //if soda is out, messagebox prompts up
             if (entry.drinkNumber == 0)
             {
                 MessageBox.Show(entry.name + " sold out.");
             }
             else
-            {
+            {   //calculates the drink number quantity
                 entry.drinkNumber--;
                 soda[index, 2] = entry.drinkNumber.ToString();
                 switch (index)
@@ -67,7 +67,7 @@ namespace Vending_Machine
                         break;
                 }
                 total_sales += double.Parse(entry.price);
-
+                //output for label
                 totalSalesLabel.Text = "$" + total_sales;
 
 
@@ -109,5 +109,8 @@ namespace Vending_Machine
         {
             this.Close();
         }
+
+
+
     }
 }
