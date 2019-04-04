@@ -29,7 +29,7 @@ namespace Vending_Machine
 
         string[,] soda = new string[,] { {"Cola", "1.00", "20"}, {"Root Beer", "1.00", "20"}, {"Lemon Lime", "1.00", "20"}, {"Grape Soda", "1.50", "20"}, {"Cream Soda", "1.50", "20"} };
 
-        double total = 0.00;
+        double total_sales = 0.00;
         drinkInput entry = new drinkInput();
         int index;
 
@@ -39,7 +39,7 @@ namespace Vending_Machine
         }
 
 
-        private void total_sales()
+        private void sold_out()
         {
             entry.name = soda[index, 0];
             entry.price = soda[index, 1];
@@ -66,8 +66,18 @@ namespace Vending_Machine
                     case 4: creamsoda.Text = entry.drinkNumber.ToString();
                         break;
                 }
+                total_sales += double.Parse(entry.price);
+                totalSalesLabel = " $ " + total_sales;
+
+
 
             }
+        }
+
+        private void colaPictureBox_Click(object sender, EventArgs e)
+        {
+            index = 0;
+            sold_out();
         }
     }
 }
