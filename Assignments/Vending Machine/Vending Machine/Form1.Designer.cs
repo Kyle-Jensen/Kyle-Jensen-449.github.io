@@ -30,52 +30,52 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(vendingMachine));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.colaPictureBox = new System.Windows.Forms.PictureBox();
-            this.rootBeerPictureBox = new System.Windows.Forms.PictureBox();
-            this.lemonLimePictureBox = new System.Windows.Forms.PictureBox();
-            this.grapeSodaPictureBox = new System.Windows.Forms.PictureBox();
-            this.creamSodaPictureBox = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.colaLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.colaPictureBox = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.rootBeerLabel = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.rootBeerPictureBox = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lemonLimeLabel = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.lemonLimePictureBox = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.grapeSodaLabel = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.grapeSodaPictureBox = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.creamSodaLabel = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.creamSodaPictureBox = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.totalSalesLabel = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.colaPictureBox)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rootBeerPictureBox)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lemonLimePictureBox)).BeginInit();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grapeSodaPictureBox)).BeginInit();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.creamSodaPictureBox)).BeginInit();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.colaLabel);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.colaPictureBox);
@@ -84,124 +84,16 @@
             this.panel1.Size = new System.Drawing.Size(200, 100);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // colaLabel
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.rootBeerPictureBox);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Location = new System.Drawing.Point(212, 47);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 100);
-            this.panel2.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.lemonLimePictureBox);
-            this.panel3.Controls.Add(this.label10);
-            this.panel3.Location = new System.Drawing.Point(6, 153);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 100);
-            this.panel3.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel4.Controls.Add(this.label11);
-            this.panel4.Controls.Add(this.label12);
-            this.panel4.Controls.Add(this.grapeSodaPictureBox);
-            this.panel4.Controls.Add(this.label13);
-            this.panel4.Location = new System.Drawing.Point(212, 153);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 100);
-            this.panel4.TabIndex = 0;
-            // 
-            // panel5
-            // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel5.Controls.Add(this.label14);
-            this.panel5.Controls.Add(this.label15);
-            this.panel5.Controls.Add(this.creamSodaPictureBox);
-            this.panel5.Controls.Add(this.label16);
-            this.panel5.Location = new System.Drawing.Point(6, 259);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 100);
-            this.panel5.TabIndex = 0;
-            // 
-            // panel6
-            // 
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel6.Controls.Add(this.totalSalesLabel);
-            this.panel6.Controls.Add(this.label18);
-            this.panel6.Location = new System.Drawing.Point(212, 259);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(200, 100);
-            this.panel6.TabIndex = 0;
-            // 
-            // colaPictureBox
-            // 
-            this.colaPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("colaPictureBox.Image")));
-            this.colaPictureBox.Location = new System.Drawing.Point(4, 3);
-            this.colaPictureBox.Name = "colaPictureBox";
-            this.colaPictureBox.Size = new System.Drawing.Size(99, 90);
-            this.colaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.colaPictureBox.TabIndex = 1;
-            this.colaPictureBox.TabStop = false;
-            this.colaPictureBox.Click += new System.EventHandler(this.colaPictureBox_Click);
-            // 
-            // rootBeerPictureBox
-            // 
-            this.rootBeerPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("rootBeerPictureBox.Image")));
-            this.rootBeerPictureBox.Location = new System.Drawing.Point(3, 3);
-            this.rootBeerPictureBox.Name = "rootBeerPictureBox";
-            this.rootBeerPictureBox.Size = new System.Drawing.Size(100, 95);
-            this.rootBeerPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.rootBeerPictureBox.TabIndex = 2;
-            this.rootBeerPictureBox.TabStop = false;
-            // 
-            // lemonLimePictureBox
-            // 
-            this.lemonLimePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("lemonLimePictureBox.Image")));
-            this.lemonLimePictureBox.Location = new System.Drawing.Point(4, 3);
-            this.lemonLimePictureBox.Name = "lemonLimePictureBox";
-            this.lemonLimePictureBox.Size = new System.Drawing.Size(100, 90);
-            this.lemonLimePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.lemonLimePictureBox.TabIndex = 3;
-            this.lemonLimePictureBox.TabStop = false;
-            // 
-            // grapeSodaPictureBox
-            // 
-            this.grapeSodaPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("grapeSodaPictureBox.Image")));
-            this.grapeSodaPictureBox.Location = new System.Drawing.Point(3, 3);
-            this.grapeSodaPictureBox.Name = "grapeSodaPictureBox";
-            this.grapeSodaPictureBox.Size = new System.Drawing.Size(100, 90);
-            this.grapeSodaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.grapeSodaPictureBox.TabIndex = 4;
-            this.grapeSodaPictureBox.TabStop = false;
-            // 
-            // creamSodaPictureBox
-            // 
-            this.creamSodaPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("creamSodaPictureBox.Image")));
-            this.creamSodaPictureBox.Location = new System.Drawing.Point(3, 3);
-            this.creamSodaPictureBox.Name = "creamSodaPictureBox";
-            this.creamSodaPictureBox.Size = new System.Drawing.Size(100, 90);
-            this.creamSodaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.creamSodaPictureBox.TabIndex = 5;
-            this.creamSodaPictureBox.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(114, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Select a Drink";
+            this.colaLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.colaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colaLabel.Location = new System.Drawing.Point(117, 51);
+            this.colaLabel.Name = "colaLabel";
+            this.colaLabel.Size = new System.Drawing.Size(76, 31);
+            this.colaLabel.TabIndex = 6;
+            this.colaLabel.Text = "20";
+            this.colaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -222,27 +114,39 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Drinks Left:";
             // 
-            // label4
+            // colaPictureBox
             // 
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(117, 51);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 31);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "20";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.colaPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("colaPictureBox.Image")));
+            this.colaPictureBox.Location = new System.Drawing.Point(4, 3);
+            this.colaPictureBox.Name = "colaPictureBox";
+            this.colaPictureBox.Size = new System.Drawing.Size(99, 90);
+            this.colaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.colaPictureBox.TabIndex = 1;
+            this.colaPictureBox.TabStop = false;
+            this.colaPictureBox.Click += new System.EventHandler(this.colaPictureBox_Click);
             // 
-            // label5
+            // panel2
             // 
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(117, 51);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 31);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "20";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.rootBeerLabel);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.rootBeerPictureBox);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Location = new System.Drawing.Point(212, 47);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 100);
+            this.panel2.TabIndex = 0;
+            // 
+            // rootBeerLabel
+            // 
+            this.rootBeerLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rootBeerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rootBeerLabel.Location = new System.Drawing.Point(117, 51);
+            this.rootBeerLabel.Name = "rootBeerLabel";
+            this.rootBeerLabel.Size = new System.Drawing.Size(76, 31);
+            this.rootBeerLabel.TabIndex = 9;
+            this.rootBeerLabel.Text = "20";
+            this.rootBeerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
@@ -254,6 +158,16 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "$1.00";
             // 
+            // rootBeerPictureBox
+            // 
+            this.rootBeerPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("rootBeerPictureBox.Image")));
+            this.rootBeerPictureBox.Location = new System.Drawing.Point(3, 3);
+            this.rootBeerPictureBox.Name = "rootBeerPictureBox";
+            this.rootBeerPictureBox.Size = new System.Drawing.Size(100, 95);
+            this.rootBeerPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rootBeerPictureBox.TabIndex = 2;
+            this.rootBeerPictureBox.TabStop = false;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -263,16 +177,28 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Drinks Left:";
             // 
-            // label8
+            // panel3
             // 
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(117, 52);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(76, 31);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "20";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.lemonLimeLabel);
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.lemonLimePictureBox);
+            this.panel3.Controls.Add(this.label10);
+            this.panel3.Location = new System.Drawing.Point(6, 153);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 100);
+            this.panel3.TabIndex = 0;
+            // 
+            // lemonLimeLabel
+            // 
+            this.lemonLimeLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lemonLimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lemonLimeLabel.Location = new System.Drawing.Point(117, 52);
+            this.lemonLimeLabel.Name = "lemonLimeLabel";
+            this.lemonLimeLabel.Size = new System.Drawing.Size(76, 31);
+            this.lemonLimeLabel.TabIndex = 12;
+            this.lemonLimeLabel.Text = "20";
+            this.lemonLimeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label9
             // 
@@ -284,6 +210,16 @@
             this.label9.TabIndex = 10;
             this.label9.Text = "$1.00";
             // 
+            // lemonLimePictureBox
+            // 
+            this.lemonLimePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("lemonLimePictureBox.Image")));
+            this.lemonLimePictureBox.Location = new System.Drawing.Point(4, 3);
+            this.lemonLimePictureBox.Name = "lemonLimePictureBox";
+            this.lemonLimePictureBox.Size = new System.Drawing.Size(100, 90);
+            this.lemonLimePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.lemonLimePictureBox.TabIndex = 3;
+            this.lemonLimePictureBox.TabStop = false;
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -293,16 +229,28 @@
             this.label10.TabIndex = 11;
             this.label10.Text = "Drinks Left:";
             // 
-            // label11
+            // panel4
             // 
-            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(117, 52);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(76, 31);
-            this.label11.TabIndex = 15;
-            this.label11.Text = "20";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.grapeSodaLabel);
+            this.panel4.Controls.Add(this.label12);
+            this.panel4.Controls.Add(this.grapeSodaPictureBox);
+            this.panel4.Controls.Add(this.label13);
+            this.panel4.Location = new System.Drawing.Point(212, 153);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(200, 100);
+            this.panel4.TabIndex = 0;
+            // 
+            // grapeSodaLabel
+            // 
+            this.grapeSodaLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.grapeSodaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grapeSodaLabel.Location = new System.Drawing.Point(117, 52);
+            this.grapeSodaLabel.Name = "grapeSodaLabel";
+            this.grapeSodaLabel.Size = new System.Drawing.Size(76, 31);
+            this.grapeSodaLabel.TabIndex = 15;
+            this.grapeSodaLabel.Text = "20";
+            this.grapeSodaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label12
             // 
@@ -314,6 +262,16 @@
             this.label12.TabIndex = 13;
             this.label12.Text = "$1.50";
             // 
+            // grapeSodaPictureBox
+            // 
+            this.grapeSodaPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("grapeSodaPictureBox.Image")));
+            this.grapeSodaPictureBox.Location = new System.Drawing.Point(3, 3);
+            this.grapeSodaPictureBox.Name = "grapeSodaPictureBox";
+            this.grapeSodaPictureBox.Size = new System.Drawing.Size(100, 90);
+            this.grapeSodaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.grapeSodaPictureBox.TabIndex = 4;
+            this.grapeSodaPictureBox.TabStop = false;
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -323,16 +281,28 @@
             this.label13.TabIndex = 14;
             this.label13.Text = "Drinks Left:";
             // 
-            // label14
+            // panel5
             // 
-            this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(117, 53);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(76, 31);
-            this.label14.TabIndex = 18;
-            this.label14.Text = "20";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel5.Controls.Add(this.creamSodaLabel);
+            this.panel5.Controls.Add(this.label15);
+            this.panel5.Controls.Add(this.creamSodaPictureBox);
+            this.panel5.Controls.Add(this.label16);
+            this.panel5.Location = new System.Drawing.Point(6, 259);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(200, 100);
+            this.panel5.TabIndex = 0;
+            // 
+            // creamSodaLabel
+            // 
+            this.creamSodaLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.creamSodaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.creamSodaLabel.Location = new System.Drawing.Point(117, 53);
+            this.creamSodaLabel.Name = "creamSodaLabel";
+            this.creamSodaLabel.Size = new System.Drawing.Size(76, 31);
+            this.creamSodaLabel.TabIndex = 18;
+            this.creamSodaLabel.Text = "20";
+            this.creamSodaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label15
             // 
@@ -344,6 +314,16 @@
             this.label15.TabIndex = 16;
             this.label15.Text = "$1.50";
             // 
+            // creamSodaPictureBox
+            // 
+            this.creamSodaPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("creamSodaPictureBox.Image")));
+            this.creamSodaPictureBox.Location = new System.Drawing.Point(3, 3);
+            this.creamSodaPictureBox.Name = "creamSodaPictureBox";
+            this.creamSodaPictureBox.Size = new System.Drawing.Size(100, 90);
+            this.creamSodaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.creamSodaPictureBox.TabIndex = 5;
+            this.creamSodaPictureBox.TabStop = false;
+            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -352,6 +332,16 @@
             this.label16.Size = new System.Drawing.Size(61, 13);
             this.label16.TabIndex = 17;
             this.label16.Text = "Drinks Left:";
+            // 
+            // panel6
+            // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel6.Controls.Add(this.totalSalesLabel);
+            this.panel6.Controls.Add(this.label18);
+            this.panel6.Location = new System.Drawing.Point(212, 259);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(200, 100);
+            this.panel6.TabIndex = 0;
             // 
             // totalSalesLabel
             // 
@@ -373,6 +363,16 @@
             this.label18.Size = new System.Drawing.Size(99, 20);
             this.label18.TabIndex = 19;
             this.label18.Text = "Total Sales";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(114, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(160, 25);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Select a Drink";
             // 
             // button1
             // 
@@ -401,21 +401,21 @@
             this.Load += new System.EventHandler(this.vendingMachine_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.colaPictureBox)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rootBeerPictureBox)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lemonLimePictureBox)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grapeSodaPictureBox)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.creamSodaPictureBox)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.colaPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rootBeerPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lemonLimePictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grapeSodaPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.creamSodaPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -434,19 +434,19 @@
         private System.Windows.Forms.PictureBox lemonLimePictureBox;
         private System.Windows.Forms.PictureBox grapeSodaPictureBox;
         private System.Windows.Forms.PictureBox creamSodaPictureBox;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label colaLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label rootBeerLabel;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lemonLimeLabel;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label grapeSodaLabel;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label creamSodaLabel;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label totalSalesLabel;

@@ -55,15 +55,15 @@ namespace Vending_Machine
                 soda[index, 2] = entry.drinkNumber.ToString();
                 switch (index)
                 {
-                    case 0: cola.Text = entry.drinkNumber.ToString();
+                    case 0: colaLabel.Text = entry.drinkNumber.ToString();
                         break;
-                    case 1: rootbeer.Text = entry.drinkNumber.ToString();
+                    case 1: rootBeerLabel.Text = entry.drinkNumber.ToString();
                         break;
-                    case 2: lemonlime.Text = entry.drinkNumber.ToString();
+                    case 2: lemonLimeLabel.Text = entry.drinkNumber.ToString();
                         break;
-                    case 3: grapesoda.Text = entry.drinkNumber.ToString();
+                    case 3: grapeSodaLabel.Text = entry.drinkNumber.ToString();
                         break;
-                    case 4: creamsoda.Text = entry.drinkNumber.ToString();
+                    case 4: creamSodaLabel.Text = entry.drinkNumber.ToString();
                         break;
                 }
                 total_sales += double.Parse(entry.price);
