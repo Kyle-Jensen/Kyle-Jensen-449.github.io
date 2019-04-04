@@ -12,11 +12,11 @@ namespace Vending_Machine
 {
 
 
-    struct inputDrinks
+    struct drinkInput
     {
         public string name;
         public string price;
-        public string drinkNumber;
+        public int drinkNumber;
     }
 
 
@@ -27,15 +27,33 @@ namespace Vending_Machine
             InitializeComponent();
         }
 
-        string[,] soda = new string[,] { {"Cola", "1.00", "20"}, { "Root Beer", "1.00", "20" }, { "Lemon Lime", "1.00", "20" }, { "Grape Soda", "1.50", "20" }, { "Cream Soda", "1.50", "20" } };
+        string[,] soda = new string[,] { {"Cola", "1.00", "20"}, {"Root Beer", "1.00", "20"}, {"Lemon Lime", "1.00", "20"}, {"Grape Soda", "1.50", "20"}, {"Cream Soda", "1.50", "20"} };
 
-        double total_sales = 0.00;
-        inputDrinks entry = new inputDrinks();
+        double total = 0.00;
+        drinkInput entry = new drinkInput();
         int index;
 
         private void vendingMachine_Load(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void total_sales()
+        {
+            entry.name = soda[index, 0];
+            entry.price = soda[index, 1];
+            entry.drinkNumber = int.Parse(soda[index, 2]);
+
+            if (entry.drinkNumber == 0)
+            {
+                MessageBox.Show(entry.name + " sold out.");
+            }
+            else
+            {
+              
+
+            }
         }
     }
 }
