@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//this form allows a user to select their preference of soda. Selecting a soda decreases quantity and increased the total sale.
 namespace Vending_Machine
 {
 
-
+    //a structure for drinkinput is delcared here
     struct drinkInput
-    {
+    {   //declaring three strings for the structure
         public string name;
         public string price;
         public int drinkNumber;
