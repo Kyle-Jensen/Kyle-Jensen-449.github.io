@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Vending_Machine
 {
-    public partial class Form1 : Form
+    public partial class vendingMachine : Form
     {
-        public Form1()
+        public vendingMachine()
         {
             InitializeComponent();
+        }
+
+        private void vendingMachine_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
