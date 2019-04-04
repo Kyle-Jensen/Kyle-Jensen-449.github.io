@@ -220,6 +220,7 @@
             this.lemonLimePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.lemonLimePictureBox.TabIndex = 3;
             this.lemonLimePictureBox.TabStop = false;
+            this.lemonLimePictureBox.Click += new System.EventHandler(this.lemonLimePictureBox_Click);
             // 
             // label10
             // 
@@ -272,6 +273,7 @@
             this.grapeSodaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.grapeSodaPictureBox.TabIndex = 4;
             this.grapeSodaPictureBox.TabStop = false;
+            this.grapeSodaPictureBox.Click += new System.EventHandler(this.grapeSodaPictureBox_Click);
             // 
             // label13
             // 
@@ -324,6 +326,7 @@
             this.creamSodaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.creamSodaPictureBox.TabIndex = 5;
             this.creamSodaPictureBox.TabStop = false;
+            this.creamSodaPictureBox.Click += new System.EventHandler(this.creamSodaPictureBox_Click);
             // 
             // label16
             // 

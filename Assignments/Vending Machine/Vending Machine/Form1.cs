@@ -86,5 +86,23 @@ namespace Vending_Machine
             index = 1;
             sold_out();
         }
+
+        private void lemonLimePictureBox_Click(object sender, EventArgs e)
+        {
+            index = 2;
+            sold_out();
+        }
+
+        private void grapeSodaPictureBox_Click(object sender, EventArgs e)
+        {
+            index = 3;
+            sold_out();
+        }
+
+        private void creamSodaPictureBox_Click(object sender, EventArgs e)
+        {
+            index = 4;
+            sold_out();
+        }
     }
 }
