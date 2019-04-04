@@ -51,7 +51,21 @@ namespace Vending_Machine
             }
             else
             {
-              
+                entry.drinkNumber--;
+                soda[index, 2] = entry.drinkNumber.ToString();
+                switch (index)
+                {
+                    case 0: cola.Text = entry.drinkNumber.ToString();
+                        break;
+                    case 1: rootbeer.Text = entry.drinkNumber.ToString();
+                        break;
+                    case 2: lemonlime.Text = entry.drinkNumber.ToString();
+                        break;
+                    case 3: grapesoda.Text = entry.drinkNumber.ToString();
+                        break;
+                    case 4: creamsoda.Text = entry.drinkNumber.ToString();
+                        break;
+                }
 
             }
         }
