@@ -104,5 +104,10 @@ namespace Vending_Machine
             index = 4;
             sold_out();
         }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
