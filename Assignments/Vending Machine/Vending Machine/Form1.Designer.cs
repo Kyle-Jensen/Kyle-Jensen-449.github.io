@@ -167,6 +167,7 @@
             this.rootBeerPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.rootBeerPictureBox.TabIndex = 2;
             this.rootBeerPictureBox.TabStop = false;
+            this.rootBeerPictureBox.Click += new System.EventHandler(this.rootBeerPictureBox_Click);
             // 
             // label7
             // 

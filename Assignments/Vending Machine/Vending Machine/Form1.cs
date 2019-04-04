@@ -67,7 +67,8 @@ namespace Vending_Machine
                         break;
                 }
                 total_sales += double.Parse(entry.price);
-                totalSalesLabel = " $ " + total_sales;
+
+                totalSalesLabel.Text = "$" + total_sales;
 
 
 
@@ -78,6 +79,11 @@ namespace Vending_Machine
         {
             index = 0;
             sold_out();
+        }
+
+        private void rootBeerPictureBox_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
