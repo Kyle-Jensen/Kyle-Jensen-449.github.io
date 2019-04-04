@@ -83,7 +83,8 @@ namespace Vending_Machine
 
         private void rootBeerPictureBox_Click(object sender, EventArgs e)
         {
-
+            index = 1;
+            sold_out();
         }
     }
 }
