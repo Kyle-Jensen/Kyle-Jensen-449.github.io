@@ -10,6 +10,16 @@ using System.Windows.Forms;
 
 namespace Vending_Machine
 {
+
+
+    struct inputDrinks
+    {
+        public string name;
+        public string price;
+        public string drinkNumber;
+    }
+
+
     public partial class vendingMachine : Form
     {
         public vendingMachine()
