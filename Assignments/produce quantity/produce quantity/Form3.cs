@@ -38,37 +38,65 @@ namespace produce_quantity
 
         private void dairyButton_Click(object sender, EventArgs e)
         {
+            Category dairy = new Category();
+            dairy._CategoryName = "Dairy Goods";
 
+            Form1 f = new Form1(dairy);
+            f.Show();
         }
 
         private void deliButton_Click(object sender, EventArgs e)
         {
+            Category deli = new Category();
+            deli._CategoryName = "Deli Goods";
 
+            Form1 f = new Form1(deli);
+            f.Show();
         }
 
         private void frozenButton_Click(object sender, EventArgs e)
         {
+            Category frozen = new Category();
+            frozen._CategoryName = "Frozen Goods";
 
+            Form1 f = new Form1(frozen);
+            f.Show();
         }
 
         private void meatButton_Click(object sender, EventArgs e)
         {
+            Category meat = new Category();
+            meat._CategoryName = "Meat Goods";
 
+            Form1 f = new Form1(meat);
+            f.Show();
         }
 
         private void packagedButton_Click(object sender, EventArgs e)
         {
+            Category packaged = new Category();
+            packaged._CategoryName = "Packaged Goods";
 
+            Form1 f = new Form1(packaged);
+            f.Show();
         }
 
         private void produceButton_Click(object sender, EventArgs e)
         {
+            Category produce = new Category();
+            produce._CategoryName = "Produce Goods";
 
+            Form1 f = new Form1(produce);
+            f.Show();
         }
 
         private void seafoodButton_Click(object sender, EventArgs e)
         {
+            Category seafood = new Category();
+            seafood._CategoryName = "Seafood";
 
+            Form1 f = new Form1(seafood);
+            f.Show();
         }
     }
 }
