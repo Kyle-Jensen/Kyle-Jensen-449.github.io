@@ -20,8 +20,15 @@ namespace produce_quantity
 
         private void cannedButton_Click(object sender, EventArgs e)
         {
+            // create tuna item
+            GroceryItem tuna = new GroceryItem("Tuna", "");
+           
+            // create category
             Category canned = new Category();
+            // set category name
             canned._CategoryName = "Canned Goods";
+            // add grocery items to category
+            // more code here??
 
             Form1 f = new Form1(canned);
             f.Show();
@@ -29,6 +36,8 @@ namespace produce_quantity
 
         private void bakeryButton_Click(object sender, EventArgs e)
         {
+            GroceryItem bread = new GroceryItem("Bread", "");
+
             Category bakery = new Category();
             bakery._CategoryName = "Bakery Goods";
 
@@ -38,6 +47,8 @@ namespace produce_quantity
 
         private void dairyButton_Click(object sender, EventArgs e)
         {
+            GroceryItem milk = new GroceryItem("Milk", "");
+
             Category dairy = new Category();
             dairy._CategoryName = "Dairy Goods";
 
@@ -47,6 +58,8 @@ namespace produce_quantity
 
         private void deliButton_Click(object sender, EventArgs e)
         {
+            GroceryItem sandwich = new GroceryItem("Sandwich", "");
+
             Category deli = new Category();
             deli._CategoryName = "Deli Goods";
 
@@ -56,6 +69,8 @@ namespace produce_quantity
 
         private void frozenButton_Click(object sender, EventArgs e)
         {
+            GroceryItem icecream = new GroceryItem("Icecream", "");
+
             Category frozen = new Category();
             frozen._CategoryName = "Frozen Goods";
 
@@ -65,6 +80,8 @@ namespace produce_quantity
 
         private void meatButton_Click(object sender, EventArgs e)
         {
+            GroceryItem steak = new GroceryItem("Steak", "");
+
             Category meat = new Category();
             meat._CategoryName = "Meat Goods";
 
@@ -74,6 +91,8 @@ namespace produce_quantity
 
         private void packagedButton_Click(object sender, EventArgs e)
         {
+            GroceryItem cereal = new GroceryItem("Cereal", "");
+
             Category packaged = new Category();
             packaged._CategoryName = "Packaged Goods";
 
@@ -83,6 +102,8 @@ namespace produce_quantity
 
         private void produceButton_Click(object sender, EventArgs e)
         {
+            GroceryItem apple = new GroceryItem("Appple", "");
+
             Category produce = new Category();
             produce._CategoryName = "Produce Goods";
 
@@ -92,6 +113,8 @@ namespace produce_quantity
 
         private void seafoodButton_Click(object sender, EventArgs e)
         {
+            GroceryItem salmon = new GroceryItem("Salmon", "");
+
             Category seafood = new Category();
             seafood._CategoryName = "Seafood";
 

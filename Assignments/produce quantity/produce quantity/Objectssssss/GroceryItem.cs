@@ -10,5 +10,16 @@ namespace produce_quantity.Objectssssss
     {
         public string _Name;
         public string _Information;
+
+        public GroceryItem() { }
+        public GroceryItem(string name, string info)
+        {
+            _Name = name;
+            _Information = info;
+        }
+
+       
+
     }
+
 }
