@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using produce_quantity.Objectssssss;
+
 namespace produce_quantity
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        Category _Category;
+        public Form1(Category category)
         {
+            _Category = category;
             InitializeComponent();
+            categoryName.Text = category._CategoryName;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -42,6 +47,11 @@ namespace produce_quantity
         {
             Form2 f = new Form2();
             f.Show();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

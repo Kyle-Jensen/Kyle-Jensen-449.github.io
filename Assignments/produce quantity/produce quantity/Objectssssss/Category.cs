@@ -11,7 +11,7 @@ namespace produce_quantity.Objectssssss
         public string _CategoryName { get; set; }
         public List<string> _Items { get; set; }
 
-
+        public Category() { }
 
         public Category(string cName, List<string> items)
         {

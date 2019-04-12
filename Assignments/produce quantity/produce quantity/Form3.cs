@@ -21,11 +21,19 @@ namespace produce_quantity
         private void cannedButton_Click(object sender, EventArgs e)
         {
             Category canned = new Category();
+            canned._CategoryName = "Canned Goods";
+
+            Form1 f = new Form1(canned);
+            f.Show();
         }
 
         private void bakeryButton_Click(object sender, EventArgs e)
         {
+            Category bakery = new Category();
+            bakery._CategoryName = "Bakery Goods";
 
+            Form1 f = new Form1(bakery);
+            f.Show();
         }
 
         private void dairyButton_Click(object sender, EventArgs e)
