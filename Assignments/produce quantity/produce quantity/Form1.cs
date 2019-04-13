@@ -34,12 +34,35 @@ namespace produce_quantity
                 StreamWriter outputFile;
                 outputFile = File.CreateText("test.txt");
 
-                outputFile.WriteLine("Potato(s): " + textBox1.Text);
-                outputFile.WriteLine("Corn: " + textBox2.Text);
-                outputFile.WriteLine("Brocoli: " + textBox3.Text);
-                outputFile.WriteLine("Tomato(s): " + textBox4.Text);
-                outputFile.WriteLine("Carrot(s): " +textBox5.Text);
+                outputFile.WriteLine("Apple: " + textBox1.Text);
+                outputFile.WriteLine("Brocoli: " + textBox2.Text);
+                outputFile.WriteLine("Potato: " + textBox3.Text);
+                outputFile.WriteLine("Pear: " + textBox4.Text);
+                outputFile.WriteLine("Corn: " +textBox5.Text);
+
                 outputFile.Close();
+               
+
+                outputFile = File.CreateText("cannedTest.txt");
+                outputFile.WriteLine("Tuna: " + textBox1.Text);
+                outputFile.WriteLine("Baked Beans: " + textBox2.Text);
+                outputFile.WriteLine("Spam: " + textBox3.Text);
+                outputFile.WriteLine("Sliced Beans: " + textBox4.Text);
+                outputFile.WriteLine("Canned Tomatoes: " + textBox5.Text);
+
+                outputFile.Close();
+
+                outputFile = File.CreateText("bakeryTest.txt");
+                outputFile.WriteLine("Bread: " + textBox1.Text);
+                outputFile.WriteLine("Muffin: " + textBox2.Text);
+                outputFile.WriteLine("Pie: " + textBox3.Text);
+                outputFile.WriteLine("Cookie: " + textBox4.Text);
+                outputFile.WriteLine("Canned Tomatoes: " + textBox5.Text);
+
+                outputFile.Close();
+
+
+
 
             }
             catch (Exception ex)

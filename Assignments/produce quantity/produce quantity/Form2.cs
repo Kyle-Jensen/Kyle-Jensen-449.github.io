@@ -27,20 +27,50 @@ namespace produce_quantity
             int lines = 0;
             while (!inputFile.EndOfStream)
             {   
-                listBox1.Items.Add(inputFile.ReadLine());
+                listBox6.Items.Add(inputFile.ReadLine());
                 lines++;
             }
             inputFile.Close();
         }
 
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void cannedItems()
         {
-            
+            StreamReader inputFile;
+            inputFile = File.OpenText("cannedTest.txt");
+
+            int lines = 0;
+            while (!inputFile.EndOfStream)
+            {
+                listBox1.Items.Add(inputFile.ReadLine());
+                lines++;
+            }
+            inputFile.Close();
+        }
+
+        private void bakeryItems()
+        {
+            StreamReader inputFile;
+            inputFile = File.OpenText("bakeryTest.txt");
+
+            int lines = 0;
+            while (!inputFile.EndOfStream)
+            {
+                listBox2.Items.Add(inputFile.ReadLine());
+                lines++;
+            }
+            inputFile.Close();
+        }
+
+        private void listBox6_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            items();
         }
         private void Form2_Load(object sender, EventArgs e)
         {
             items();
+            cannedItems();
+            bakeryItems();
         }
     }
 
