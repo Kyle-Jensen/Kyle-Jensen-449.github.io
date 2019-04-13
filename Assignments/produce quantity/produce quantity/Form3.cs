@@ -49,7 +49,7 @@ namespace produce_quantity
         private void bakeryButton_Click(object sender, EventArgs e)
         {
             GroceryItem bread = new GroceryItem("Bread");
-            GroceryItem muffin = new GroceryItem("Muffins");
+            GroceryItem muffin = new GroceryItem("Muffin");
             GroceryItem pie = new GroceryItem("Pie");
             GroceryItem cookie = new GroceryItem("Cookie");
             GroceryItem buns = new GroceryItem("Buns");
@@ -238,7 +238,7 @@ namespace produce_quantity
 
         private void exitButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }
