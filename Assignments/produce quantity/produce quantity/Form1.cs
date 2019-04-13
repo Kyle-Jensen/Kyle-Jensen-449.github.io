@@ -52,11 +52,19 @@ namespace produce_quantity
         {
             Form2 f = new Form2();
             f.Show();
+            this.Hide();
         }
 
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            Form3 f = new Form3();
+            f.Show();
+            this.Hide();
         }
     }
 }

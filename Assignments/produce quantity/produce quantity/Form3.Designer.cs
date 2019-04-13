@@ -41,6 +41,7 @@
             this.produceButton = new System.Windows.Forms.Button();
             this.packagedButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.exitButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -178,11 +179,22 @@
             this.panel1.Size = new System.Drawing.Size(438, 230);
             this.panel1.TabIndex = 12;
             // 
+            // exitButton
+            // 
+            this.exitButton.Location = new System.Drawing.Point(219, 320);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(75, 23);
+            this.exitButton.TabIndex = 13;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(544, 325);
+            this.ClientSize = new System.Drawing.Size(544, 371);
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.listButton);
             this.Controls.Add(this.accountButton);
@@ -210,5 +222,6 @@
         private System.Windows.Forms.Button produceButton;
         private System.Windows.Forms.Button packagedButton;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button exitButton;
     }
 }

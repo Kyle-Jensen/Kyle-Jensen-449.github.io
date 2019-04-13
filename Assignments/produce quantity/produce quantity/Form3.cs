@@ -43,6 +43,7 @@ namespace produce_quantity
 
             Form1 f = new Form1(canned);
             f.Show();
+            this.Hide();
         }
 
         private void bakeryButton_Click(object sender, EventArgs e)
@@ -65,6 +66,7 @@ namespace produce_quantity
             
             Form1 f = new Form1(bakery);
             f.Show();
+            this.Hide();
         }
 
         private void dairyButton_Click(object sender, EventArgs e)
@@ -88,6 +90,7 @@ namespace produce_quantity
 
             Form1 f = new Form1(dairy);
             f.Show();
+            this.Hide();
         }
 
         private void deliButton_Click(object sender, EventArgs e)
@@ -96,7 +99,7 @@ namespace produce_quantity
             GroceryItem salad = new GroceryItem("Salad");
             GroceryItem wrap = new GroceryItem("Wrap");
             GroceryItem slicedmeat = new GroceryItem("Sliced Meat");
-            GroceryItem slicedcheese = new GroceryItem("Slice Cheese");
+            GroceryItem slicedcheese = new GroceryItem("Sliced Cheese");
 
             List<GroceryItem> itemList = new List<GroceryItem>();
             itemList.Add(sandwich);
@@ -111,6 +114,7 @@ namespace produce_quantity
 
             Form1 f = new Form1(deli);
             f.Show();
+            this.Hide();
         }
 
         private void frozenButton_Click(object sender, EventArgs e)
@@ -133,6 +137,7 @@ namespace produce_quantity
 
             Form1 f = new Form1(frozen);
             f.Show();
+            this.Hide();
         }
 
         private void meatButton_Click(object sender, EventArgs e)
@@ -156,6 +161,7 @@ namespace produce_quantity
 
             Form1 f = new Form1(meat);
             f.Show();
+            this.Hide();
         }
 
         private void packagedButton_Click(object sender, EventArgs e)
@@ -174,11 +180,12 @@ namespace produce_quantity
             itemList.Add(fruitsnacks);
 
 
-            Category packaged = new Category();
-            packaged._CategoryName = "Packaged Goods";
+            Category packaged = new Category("Packaged", itemList);
+            
 
             Form1 f = new Form1(packaged);
             f.Show();
+            this.Hide();
         }
 
         private void produceButton_Click(object sender, EventArgs e)
@@ -189,11 +196,20 @@ namespace produce_quantity
             GroceryItem pear = new GroceryItem("Pear");
             GroceryItem corn = new GroceryItem("Corn");
 
-            Category produce = new Category();
-            produce._CategoryName = "Produce Goods";
+            List<GroceryItem> itemList = new List<GroceryItem>();
+            itemList.Add(apple);
+            itemList.Add(brocoli);
+            itemList.Add(potato);
+            itemList.Add(pear);
+            itemList.Add(corn);
+
+
+            Category produce = new Category("Produce", itemList);
+      
 
             Form1 f = new Form1(produce);
             f.Show();
+            this.Hide();
         }
 
         private void seafoodButton_Click(object sender, EventArgs e)
@@ -204,11 +220,25 @@ namespace produce_quantity
             GroceryItem crab = new GroceryItem("Crab");
             GroceryItem lobster = new GroceryItem("Lobster");
 
-            Category seafood = new Category();
-            seafood._CategoryName = "Seafood";
+            List<GroceryItem> itemList = new List<GroceryItem>();
+            itemList.Add(salmon);
+            itemList.Add(trout);
+            itemList.Add(shrimp);
+            itemList.Add(crab);
+            itemList.Add(lobster);
+
+
+            Category seafood = new Category("Seafood", itemList);
+           
 
             Form1 f = new Form1(seafood);
             f.Show();
+            this.Hide();
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
