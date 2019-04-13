@@ -20,6 +20,11 @@ namespace produce_quantity
             _Category = category;
             InitializeComponent();
             categoryName.Text = category._CategoryName;
+            label1.Text = category._Items.ElementAtOrDefault(0)._Name;
+            label2.Text = category._Items.ElementAtOrDefault(1)._Name;
+            label3.Text = category._Items.ElementAtOrDefault(2)._Name;
+            label4.Text = category._Items.ElementAtOrDefault(3)._Name;
+            label5.Text = category._Items.ElementAtOrDefault(4)._Name;
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -27,11 +27,17 @@ namespace produce_quantity
             GroceryItem slicedbeans = new GroceryItem("Sliced Beans");
             GroceryItem cannedtomatoes = new GroceryItem("Canned Tomatoes");
 
+            List<GroceryItem> itemList = new List<GroceryItem>();
+            itemList.Add(tuna);
+            itemList.Add(bakedbeans);
+            itemList.Add(spam);
+            itemList.Add(slicedbeans);
+            itemList.Add(cannedtomatoes);
 
             // create category
-            Category canned = new Category();
+            Category canned = new Category("Canned", itemList);
             // set category name
-            canned._CategoryName = "Canned Goods";
+            
             // add grocery items to category
             // more code here??
 
@@ -47,9 +53,16 @@ namespace produce_quantity
             GroceryItem cookie = new GroceryItem("Cookie");
             GroceryItem buns = new GroceryItem("Buns");
 
-            Category bakery = new Category();
-            bakery._CategoryName = "Bakery Goods";
+            List<GroceryItem> itemList = new List<GroceryItem>();
+            itemList.Add(bread);
+            itemList.Add(muffin);
+            itemList.Add(pie);
+            itemList.Add(cookie);
+            itemList.Add(buns);
 
+
+            Category bakery = new Category("Bakery", itemList);
+            
             Form1 f = new Form1(bakery);
             f.Show();
         }
@@ -62,8 +75,16 @@ namespace produce_quantity
             GroceryItem cream = new GroceryItem("Cream");
             GroceryItem yogurt = new GroceryItem("Yogurt");
 
-            Category dairy = new Category();
-            dairy._CategoryName = "Dairy Goods";
+            List<GroceryItem> itemList = new List<GroceryItem>();
+            itemList.Add(milk);
+            itemList.Add(butter);
+            itemList.Add(eggs);
+            itemList.Add(cream);
+            itemList.Add(yogurt);
+
+
+            Category dairy = new Category("Dairy", itemList);
+            
 
             Form1 f = new Form1(dairy);
             f.Show();
@@ -77,8 +98,16 @@ namespace produce_quantity
             GroceryItem slicedmeat = new GroceryItem("Sliced Meat");
             GroceryItem slicedcheese = new GroceryItem("Slice Cheese");
 
-            Category deli = new Category();
-            deli._CategoryName = "Deli Goods";
+            List<GroceryItem> itemList = new List<GroceryItem>();
+            itemList.Add(sandwich);
+            itemList.Add(salad);
+            itemList.Add(wrap);
+            itemList.Add(slicedmeat);
+            itemList.Add(slicedcheese);
+
+
+            Category deli = new Category("Deli", itemList);
+            
 
             Form1 f = new Form1(deli);
             f.Show();
@@ -92,8 +121,15 @@ namespace produce_quantity
             GroceryItem frozenpizza = new GroceryItem("Frozen Pizza");
             GroceryItem frozenpretzel = new GroceryItem("Frozen Pretzel");
 
-            Category frozen = new Category();
-            frozen._CategoryName = "Frozen Goods";
+            List<GroceryItem> itemList = new List<GroceryItem>();
+            itemList.Add(icecream);
+            itemList.Add(frozenvegetables);
+            itemList.Add(frozenfruits);
+            itemList.Add(frozenpizza);
+            itemList.Add(frozenpretzel);
+
+            Category frozen = new Category("Frozen", itemList);
+           
 
             Form1 f = new Form1(frozen);
             f.Show();
@@ -107,8 +143,16 @@ namespace produce_quantity
             GroceryItem lamb = new GroceryItem("Lamb");
             GroceryItem veal = new GroceryItem("Veal");
 
-            Category meat = new Category();
-            meat._CategoryName = "Meat Goods";
+            List<GroceryItem> itemList = new List<GroceryItem>();
+            itemList.Add(steak);
+            itemList.Add(chicken);
+            itemList.Add(pork);
+            itemList.Add(lamb);
+            itemList.Add(veal);
+
+
+            Category meat = new Category("Meat", itemList);
+            
 
             Form1 f = new Form1(meat);
             f.Show();
@@ -121,6 +165,14 @@ namespace produce_quantity
             GroceryItem crackers = new GroceryItem("Crackers");
             GroceryItem popcorn = new GroceryItem("Popcorn");
             GroceryItem fruitsnacks = new GroceryItem("Fruit Snacks");
+
+            List<GroceryItem> itemList = new List<GroceryItem>();
+            itemList.Add(cereal);
+            itemList.Add(chips);
+            itemList.Add(crackers);
+            itemList.Add(popcorn);
+            itemList.Add(fruitsnacks);
+
 
             Category packaged = new Category();
             packaged._CategoryName = "Packaged Goods";
