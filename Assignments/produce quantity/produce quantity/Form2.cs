@@ -30,6 +30,7 @@ namespace produce_quantity
                 listBox1.Items.Add(inputFile.ReadLine());
                 lines++;
             }
+            inputFile.Close();
         }
 
 

@@ -69,7 +69,7 @@
             this.listButton.Name = "listButton";
             this.listButton.Size = new System.Drawing.Size(75, 42);
             this.listButton.TabIndex = 2;
-            this.listButton.Text = "List";
+            this.listButton.Text = "Cart";
             this.listButton.UseVisualStyleBackColor = true;
             // 
             // cannedButton
