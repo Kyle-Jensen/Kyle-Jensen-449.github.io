@@ -90,7 +90,7 @@ namespace produce_quantity
             {
                 StreamReader inputFile;
                 inputFile = File.OpenText("Dairy.txt");
-
+               
                 int lines = 0;
                 while (!inputFile.EndOfStream)
                 {
