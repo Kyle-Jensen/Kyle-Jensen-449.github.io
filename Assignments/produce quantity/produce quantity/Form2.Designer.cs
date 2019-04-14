@@ -46,6 +46,7 @@
             this.listBox8 = new System.Windows.Forms.ListBox();
             this.label9 = new System.Windows.Forms.Label();
             this.listBox9 = new System.Windows.Forms.ListBox();
+            this.backButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox1
@@ -229,11 +230,22 @@
             this.listBox9.Size = new System.Drawing.Size(172, 144);
             this.listBox9.TabIndex = 12;
             // 
+            // backButton
+            // 
+            this.backButton.Location = new System.Drawing.Point(283, 12);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(75, 36);
+            this.backButton.TabIndex = 18;
+            this.backButton.Text = "Back";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 686);
+            this.ClientSize = new System.Drawing.Size(646, 686);
+            this.Controls.Add(this.backButton);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.listBox7);
             this.Controls.Add(this.label8);
@@ -280,5 +292,6 @@
         private System.Windows.Forms.ListBox listBox8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ListBox listBox9;
+        private System.Windows.Forms.Button backButton;
     }
 }

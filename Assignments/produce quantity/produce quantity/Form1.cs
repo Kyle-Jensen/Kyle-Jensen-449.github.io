@@ -32,32 +32,39 @@ namespace produce_quantity
             try
             {
                 StreamWriter outputFile;
-                outputFile = File.CreateText("test.txt");
 
-                outputFile.WriteLine("Apple: " + textBox1.Text);
-                outputFile.WriteLine("Brocoli: " + textBox2.Text);
-                outputFile.WriteLine("Potato: " + textBox3.Text);
-                outputFile.WriteLine("Pear: " + textBox4.Text);
-                outputFile.WriteLine("Corn: " +textBox5.Text);
+                string nameOfCategory = "";
 
-                outputFile.Close();
-               
+                nameOfCategory = _Category._CategoryName;
 
-                outputFile = File.CreateText("cannedTest.txt");
-                outputFile.WriteLine("Tuna: " + textBox1.Text);
-                outputFile.WriteLine("Baked Beans: " + textBox2.Text);
-                outputFile.WriteLine("Spam: " + textBox3.Text);
-                outputFile.WriteLine("Sliced Beans: " + textBox4.Text);
-                outputFile.WriteLine("Canned Tomatoes: " + textBox5.Text);
+                outputFile = File.CreateText(_Category._CategoryName + ".txt");
 
-                outputFile.Close();
+                //writeline of grocery item quantity 
 
-                outputFile = File.CreateText("bakeryTest.txt");
-                outputFile.WriteLine("Bread: " + textBox1.Text);
-                outputFile.WriteLine("Muffin: " + textBox2.Text);
-                outputFile.WriteLine("Pie: " + textBox3.Text);
-                outputFile.WriteLine("Cookie: " + textBox4.Text);
-                outputFile.WriteLine("Canned Tomatoes: " + textBox5.Text);
+                //Item: Value
+                //Item2: Value
+
+
+                if (!String.IsNullOrEmpty(textBox1.Text))
+                {
+                    outputFile.WriteLine(_Category._Items.ElementAtOrDefault(0)._Name + ": " + textBox1.Text);
+                }
+                if (!String.IsNullOrEmpty(textBox2.Text))
+                {
+                    outputFile.WriteLine(_Category._Items.ElementAtOrDefault(1)._Name + ": " + textBox2.Text);
+                }
+                if (!String.IsNullOrEmpty(textBox3.Text))
+                {
+                    outputFile.WriteLine(_Category._Items.ElementAtOrDefault(2)._Name + ": " + textBox3.Text);
+                }
+                if (!String.IsNullOrEmpty(textBox4.Text))
+                {
+                    outputFile.WriteLine(_Category._Items.ElementAtOrDefault(3)._Name + ": " + textBox4.Text);
+                }
+                if (!String.IsNullOrEmpty(textBox5.Text))
+                {
+                    outputFile.WriteLine(_Category._Items.ElementAtOrDefault(4)._Name + ": " + textBox5.Text);
+                }
 
                 outputFile.Close();
 

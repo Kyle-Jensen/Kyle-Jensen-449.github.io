@@ -19,58 +19,220 @@ namespace produce_quantity
 
         
 
-        private void items()
+        private void produceItems()
         {
-            StreamReader inputFile;
-            inputFile = File.OpenText("test.txt");
+            try
+            {
 
-            int lines = 0;
-            while (!inputFile.EndOfStream)
-            {   
-                listBox6.Items.Add(inputFile.ReadLine());
-                lines++;
+                StreamReader inputFile;
+                inputFile = File.OpenText("Produce.txt");
+
+                int lines = 0;
+                while (!inputFile.EndOfStream)
+                {
+                    listBox6.Items.Add(inputFile.ReadLine());
+                    lines++;
+                }
+                inputFile.Close();
             }
-            inputFile.Close();
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
 
         private void cannedItems()
         {
-            StreamReader inputFile;
-            inputFile = File.OpenText("cannedTest.txt");
-
-            int lines = 0;
-            while (!inputFile.EndOfStream)
+            try
             {
-                listBox1.Items.Add(inputFile.ReadLine());
-                lines++;
+                StreamReader inputFile;
+                inputFile = File.OpenText("Canned.txt");
+
+                int lines = 0;
+                while (!inputFile.EndOfStream)
+                {
+                    listBox1.Items.Add(inputFile.ReadLine());
+                    lines++;
+                }
+                inputFile.Close();
             }
-            inputFile.Close();
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void bakeryItems()
         {
-            StreamReader inputFile;
-            inputFile = File.OpenText("bakeryTest.txt");
-
-            int lines = 0;
-            while (!inputFile.EndOfStream)
+            try
             {
-                listBox2.Items.Add(inputFile.ReadLine());
-                lines++;
+                StreamReader inputFile;
+                inputFile = File.OpenText("Bakery.txt");
+
+                int lines = 0;
+                while (!inputFile.EndOfStream)
+                {
+                    listBox2.Items.Add(inputFile.ReadLine());
+                    lines++;
+                }
+                inputFile.Close();
             }
-            inputFile.Close();
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void dairyItems()
+        {
+            try
+            {
+                StreamReader inputFile;
+                inputFile = File.OpenText("Dairy.txt");
+
+                int lines = 0;
+                while (!inputFile.EndOfStream)
+                {
+                    listBox9.Items.Add(inputFile.ReadLine());
+                    lines++;
+                }
+                inputFile.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void deliItems()
+        {
+            try
+            {
+                StreamReader inputFile;
+                inputFile = File.OpenText("Deli.txt");
+
+                int lines = 0;
+                while (!inputFile.EndOfStream)
+                {
+                    listBox3.Items.Add(inputFile.ReadLine());
+                    lines++;
+                }
+                inputFile.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void frozenItems()
+        {
+            try
+            {
+                StreamReader inputFile;
+                inputFile = File.OpenText("Frozen.txt");
+
+                int lines = 0;
+                while (!inputFile.EndOfStream)
+                {
+                    listBox4.Items.Add(inputFile.ReadLine());
+                    lines++;
+                }
+                inputFile.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void meatItems()
+        {
+            try
+            {
+                StreamReader inputFile;
+                inputFile = File.OpenText("Meat.txt");
+
+                int lines = 0;
+                while (!inputFile.EndOfStream)
+                {
+                    listBox8.Items.Add(inputFile.ReadLine());
+                    lines++;
+                }
+                inputFile.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void packagedItems()
+        {
+            try
+            {
+                StreamReader inputFile;
+                inputFile = File.OpenText("Packaged.txt");
+
+                int lines = 0;
+                while (!inputFile.EndOfStream)
+                {
+                    listBox5.Items.Add(inputFile.ReadLine());
+                    lines++;
+                }
+                inputFile.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void seafoodItems()
+        {
+            try
+            {
+                StreamReader inputFile;
+                inputFile = File.OpenText("Seafood.txt");
+
+                int lines = 0;
+                while (!inputFile.EndOfStream)
+                {
+                    listBox7.Items.Add(inputFile.ReadLine());
+                    lines++;
+                }
+                inputFile.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void listBox6_SelectedIndexChanged(object sender, EventArgs e)
         {
-            items();
+            
         }
         private void Form2_Load(object sender, EventArgs e)
         {
-            items();
+            produceItems();
             cannedItems();
             bakeryItems();
+            dairyItems();
+            deliItems();
+            frozenItems();
+            meatItems();
+            packagedItems();
+            produceItems();
+            seafoodItems();
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            Form3 f = new Form3();
+            f.Show();
+            this.Hide();
         }
     }
 
