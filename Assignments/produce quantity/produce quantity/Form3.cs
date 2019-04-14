@@ -240,5 +240,12 @@ namespace produce_quantity
         {
             Application.Exit();
         }
+
+        private void listButton_Click(object sender, EventArgs e)
+        {
+            Form2 f = new Form2();
+            f.Show();
+            this.Hide();
+        }
     }
 }

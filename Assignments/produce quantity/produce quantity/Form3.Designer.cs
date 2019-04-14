@@ -72,6 +72,7 @@
             this.listButton.TabIndex = 2;
             this.listButton.Text = "Cart";
             this.listButton.UseVisualStyleBackColor = true;
+            this.listButton.Click += new System.EventHandler(this.listButton_Click);
             // 
             // cannedButton
             // 
