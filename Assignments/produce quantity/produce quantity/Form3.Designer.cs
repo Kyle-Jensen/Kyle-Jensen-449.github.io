@@ -70,7 +70,7 @@
             this.listButton.Name = "listButton";
             this.listButton.Size = new System.Drawing.Size(75, 42);
             this.listButton.TabIndex = 2;
-            this.listButton.Text = "Cart";
+            this.listButton.Text = "My List";
             this.listButton.UseVisualStyleBackColor = true;
             this.listButton.Click += new System.EventHandler(this.listButton_Click);
             // 
