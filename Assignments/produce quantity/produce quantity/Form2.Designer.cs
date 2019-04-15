@@ -47,6 +47,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.listBox9 = new System.Windows.Forms.ListBox();
             this.backButton = new System.Windows.Forms.Button();
+            this.clearTextLabelButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox1
@@ -240,11 +241,22 @@
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
+            // clearTextLabelButton
+            // 
+            this.clearTextLabelButton.Location = new System.Drawing.Point(310, 640);
+            this.clearTextLabelButton.Name = "clearTextLabelButton";
+            this.clearTextLabelButton.Size = new System.Drawing.Size(75, 38);
+            this.clearTextLabelButton.TabIndex = 19;
+            this.clearTextLabelButton.Text = "Clear Items";
+            this.clearTextLabelButton.UseVisualStyleBackColor = true;
+            this.clearTextLabelButton.Click += new System.EventHandler(this.clearTextLabelButton_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(709, 654);
+            this.ClientSize = new System.Drawing.Size(709, 690);
+            this.Controls.Add(this.clearTextLabelButton);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.listBox7);
@@ -293,5 +305,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ListBox listBox9;
         private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.Button clearTextLabelButton;
     }
 }

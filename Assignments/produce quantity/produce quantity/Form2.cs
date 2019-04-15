@@ -224,7 +224,6 @@ namespace produce_quantity
             frozenItems();
             meatItems();
             packagedItems();
-            produceItems();
             seafoodItems();
         }
 
@@ -233,6 +232,28 @@ namespace produce_quantity
             Form3 f = new Form3();
             f.Show();
             this.Hide();
+        }
+
+        private void clearTextLabelButton_Click(object sender, EventArgs e)
+        {
+            File.WriteAllText("Produce.txt", String.Empty);
+            File.WriteAllText("Canned.txt", String.Empty);
+            File.WriteAllText("Bakery.txt", String.Empty);
+            File.WriteAllText("Dairy.txt", String.Empty);
+            File.WriteAllText("Deli.txt", String.Empty);
+            File.WriteAllText("Frozen.txt", String.Empty);
+            File.WriteAllText("Meat.txt", String.Empty);
+            File.WriteAllText("Packaged.txt", String.Empty);
+            File.WriteAllText("Seafood.txt", String.Empty);
+            listBox1.Items.Clear();
+            listBox2.Items.Clear();
+            listBox3.Items.Clear();
+            listBox4.Items.Clear();
+            listBox5.Items.Clear();
+            listBox6.Items.Clear();
+            listBox7.Items.Clear();
+            listBox8.Items.Clear();
+            listBox9.Items.Clear();
         }
     }
 
