@@ -12,9 +12,9 @@ namespace addressbook
 {
     public partial class Form1 : Form
     {
-
-        string selectedName = "";
-        List<string> values = new List<string>();
+        //declaring variables and list
+        string person = "";
+        List<string> vs = new List<string>();
 
 
 
@@ -23,7 +23,7 @@ namespace addressbook
         {
             InitializeComponent();
         }
-
+        //form loads the data text file and displays text through a listbox
         private void Form1_Load(object sender, EventArgs e)
         {
             try
@@ -34,12 +34,12 @@ namespace addressbook
                 string lines;
 
                 while (!inputFile.EndOfStream)
-                {
+                {   
                     lines = inputFile.ReadLine();
-                    string[] tokens = lines.Split(',');
-
-                    PersonEntry person = new PersonEntry(tokens[0], tokens[1], tokens[2]);
-                    values.Add(person.Name + ";" + person.Email + ";" + person.PhoneNum);
+                    string[] tokens = lines.Split(','); //lines breaks for comma
+                    
+                    appData person = new appData(tokens[0], tokens[1], tokens[2]);
+                    vs.Add(person.Name + ";" + person.Email + ";" + person.Phone);
                     listBox1.Items.Add(person.Name);
                 }
             }
@@ -48,19 +48,19 @@ namespace addressbook
                 MessageBox.Show(ex.Message);
             }
         }
-
+        //for form2 output, displays selected persons details by arrays and tokens
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            selectedName = listBox1.SelectedItem.ToString();
+            person = listBox1.SelectedItem.ToString();
             Form2 newForm = new Form2();
 
             Label label2 = new Label();
             label2.Size = new Size(270, 75);
             label2.Location = new Point(10, 10);
 
-            foreach (string str in values)
+            foreach (string str in vs)
             {
-                if (str.Contains(selectedName))
+                if (str.Contains(person))
                 {
                     string[] tokens = str.Split(';');
                     label2.Text += "Name: " + tokens[0] + "\n" +
