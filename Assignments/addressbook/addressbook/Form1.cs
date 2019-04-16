@@ -27,7 +27,15 @@ namespace addressbook
         private void Form1_Load(object sender, EventArgs e)
         {
             StreamReader inputFile;
-            inputFile = File.OpenText(@"../../../../../txt/data.txt")
+            inputFile = File.OpenText(@"../../data.txt");
+
+            string lines;
+
+            while (!inputFile.EndOfStream)
+            {
+                lines = inputFile.ReadLine();
+
+            }
         }
     }
 }
