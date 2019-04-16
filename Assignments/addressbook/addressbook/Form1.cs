@@ -38,7 +38,7 @@ namespace addressbook
                     lines = inputFile.ReadLine();
                     string[] tokens = lines.Split(','); //lines breaks for comma
                     
-                    appData person = new appData(tokens[0], tokens[1], tokens[2]);
+                    PersonEntry person = new PersonEntry(tokens[0], tokens[1], tokens[2]);
                     vs.Add(person.Name + ";" + person.Email + ";" + person.Phone);
                     listBox1.Items.Add(person.Name);
                 }

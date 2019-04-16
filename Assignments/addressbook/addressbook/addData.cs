@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace addressbook
 {
-    class appData
+    class PersonEntry
     {
         //fields
         private string _Name;
         private string _Email;
         private string _Phone;
         //Constructor
-        public appData(string Name, string Email, string Phone)
+        public PersonEntry(string Name, string Email, string Phone)
         {
             _Name = Name;
             _Email = Email;
