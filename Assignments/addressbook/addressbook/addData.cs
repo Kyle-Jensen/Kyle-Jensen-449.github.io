@@ -6,58 +6,50 @@ using System.Threading.Tasks;
 
 namespace addressbook
 {
-    class addData
+    class PersonEntry
     {
-        private string _Name;
-        private string _Email;
-        private string _Phone;
+        private string _name;
+        private string _email;
+        private string _phoneNum;
 
-
-        public addData(string Name, string Email, string Phone)
+        public PersonEntry(string name, string email, string phoneNum)
         {
-            _Name = Name;
-            _Email = Email;
-            _Phone = Phone;
+            _name = name;
+            _email = email;
+            _phoneNum = phoneNum;
         }
-
-        public string forName
+        public string Name
         {
             get
             {
-                return _Name;
+                return _name;
             }
             set
             {
-                _Name = value;
+                _name = value;
             }
         }
-
-        public string forEmail
+        public string Email
         {
             get
             {
-                return _Email;
+                return _email;
             }
             set
             {
-                _Email = value;
+                _email = value;
             }
         }
-
-        public string forPhone
+        public string PhoneNum
         {
             get
             {
-                return _Phone;
+                return _phoneNum;
             }
             set
             {
-                _Phone = value;
+                _phoneNum = value;
             }
         }
     }
-
-
-
-   
 }
