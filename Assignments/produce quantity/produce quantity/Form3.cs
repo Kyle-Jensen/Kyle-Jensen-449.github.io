@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.IO;
 namespace produce_quantity
 {
     public partial class Form3 : Form
@@ -37,9 +37,18 @@ namespace produce_quantity
             // create category
             Category canned = new Category("Canned", itemList);
             // set category name
-            
+
             // add grocery items to category
             // more code here??
+
+            StreamReader inputFile;
+            inputFile = File.OpenText("test.txt");
+
+            int lines = 0;
+            while (!inputFile.EndOfStream)
+            {
+                ListBox listBox = new ListBox();
+            }
 
             Form1 f = new Form1(canned);
             f.Show();
