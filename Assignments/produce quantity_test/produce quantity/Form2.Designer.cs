@@ -48,6 +48,7 @@
             this.listBox9 = new System.Windows.Forms.ListBox();
             this.backButton = new System.Windows.Forms.Button();
             this.clearTextLabelButton = new System.Windows.Forms.Button();
+            this.printButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox1
@@ -251,11 +252,22 @@
             this.clearTextLabelButton.UseVisualStyleBackColor = true;
             this.clearTextLabelButton.Click += new System.EventHandler(this.clearTextLabelButton_Click);
             // 
+            // printButton
+            // 
+            this.printButton.Location = new System.Drawing.Point(421, 640);
+            this.printButton.Name = "printButton";
+            this.printButton.Size = new System.Drawing.Size(75, 38);
+            this.printButton.TabIndex = 20;
+            this.printButton.Text = "Print";
+            this.printButton.UseVisualStyleBackColor = true;
+            this.printButton.Click += new System.EventHandler(this.printButton_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(709, 690);
+            this.Controls.Add(this.printButton);
             this.Controls.Add(this.clearTextLabelButton);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.label7);
@@ -306,5 +318,6 @@
         private System.Windows.Forms.ListBox listBox9;
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Button clearTextLabelButton;
+        private System.Windows.Forms.Button printButton;
     }
 }

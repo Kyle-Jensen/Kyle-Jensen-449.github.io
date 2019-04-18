@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using produce_quantity.Objectssssss;
+
 namespace produce_quantity
 {
     public partial class Form2 : Form
@@ -17,6 +19,7 @@ namespace produce_quantity
             InitializeComponent();
         }
 
+        List<GroceryItem> listOfGroceries = new List<GroceryItem>();
         
 
         private void produceItems()
@@ -30,7 +33,9 @@ namespace produce_quantity
                 int lines = 0;
                 while (!inputFile.EndOfStream)
                 {
-                    listBox6.Items.Add(inputFile.ReadLine());
+                    string item = inputFile.ReadLine();
+                    listBox6.Items.Add(item);
+                    listOfGroceries.Add(new GroceryItem(item));
                     lines++;
                 }
                 inputFile.Close();
@@ -52,7 +57,9 @@ namespace produce_quantity
                 int lines = 0;
                 while (!inputFile.EndOfStream)
                 {
-                    listBox1.Items.Add(inputFile.ReadLine());
+                    string item = inputFile.ReadLine();
+                    listBox1.Items.Add(item);
+                    listOfGroceries.Add(new GroceryItem(item));
                     lines++;
                 }
                 inputFile.Close();
@@ -73,7 +80,9 @@ namespace produce_quantity
                 int lines = 0;
                 while (!inputFile.EndOfStream)
                 {
-                    listBox2.Items.Add(inputFile.ReadLine());
+                    string item = inputFile.ReadLine();
+                    listBox2.Items.Add(item);
+                    listOfGroceries.Add(new GroceryItem(item));
                     lines++;
                 }
                 inputFile.Close();
@@ -94,7 +103,9 @@ namespace produce_quantity
                 int lines = 0;
                 while (!inputFile.EndOfStream)
                 {
-                    listBox9.Items.Add(inputFile.ReadLine());
+                    string item = inputFile.ReadLine();
+                    listBox9.Items.Add(item);
+                    listOfGroceries.Add(new GroceryItem(item));
                     lines++;
                 }
                 inputFile.Close();
@@ -115,7 +126,9 @@ namespace produce_quantity
                 int lines = 0;
                 while (!inputFile.EndOfStream)
                 {
-                    listBox5.Items.Add(inputFile.ReadLine());
+                    string item = inputFile.ReadLine();
+                    listBox5.Items.Add(item);
+                    listOfGroceries.Add(new GroceryItem(item));
                     lines++;
                 }
                 inputFile.Close();
@@ -136,7 +149,9 @@ namespace produce_quantity
                 int lines = 0;
                 while (!inputFile.EndOfStream)
                 {
-                    listBox4.Items.Add(inputFile.ReadLine());
+                    string item = inputFile.ReadLine();
+                    listBox4.Items.Add(item);
+                    listOfGroceries.Add(new GroceryItem(item));
                     lines++;
                 }
                 inputFile.Close();
@@ -157,7 +172,9 @@ namespace produce_quantity
                 int lines = 0;
                 while (!inputFile.EndOfStream)
                 {
-                    listBox8.Items.Add(inputFile.ReadLine());
+                    string item = inputFile.ReadLine();
+                    listBox8.Items.Add(item);
+                    listOfGroceries.Add(new GroceryItem(item));
                     lines++;
                 }
                 inputFile.Close();
@@ -178,7 +195,9 @@ namespace produce_quantity
                 int lines = 0;
                 while (!inputFile.EndOfStream)
                 {
-                    listBox3.Items.Add(inputFile.ReadLine());
+                    string item = inputFile.ReadLine();
+                    listBox3.Items.Add(item);
+                    listOfGroceries.Add(new GroceryItem(item));
                     lines++;
                 }
                 inputFile.Close();
@@ -199,7 +218,9 @@ namespace produce_quantity
                 int lines = 0;
                 while (!inputFile.EndOfStream)
                 {
-                    listBox7.Items.Add(inputFile.ReadLine());
+                    string item = inputFile.ReadLine();
+                    listBox7.Items.Add(item);
+                    listOfGroceries.Add(new GroceryItem(item));
                     lines++;
                 }
                 inputFile.Close();
@@ -254,6 +275,20 @@ namespace produce_quantity
             listBox7.Items.Clear();
             listBox8.Items.Clear();
             listBox9.Items.Clear();
+            listOfGroceries.Clear();
+        }
+
+        private void printButton_Click(object sender, EventArgs e)
+        {
+            StreamWriter outputFile;
+            outputFile = File.CreateText("print.txt");
+
+
+            foreach (GroceryItem GroceryItem in listOfGroceries) {
+                outputFile.WriteLine(GroceryItem._Name);
+            }
+            outputFile.Close();
+
         }
     }
 

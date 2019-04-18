@@ -116,7 +116,15 @@ namespace produce_quantity
 
                     itemInfo items = new itemInfo(tokens[0], tokens[1], tokens[2], tokens[3], tokens[4], tokens[5]);
                     vs.Add(items.Item + ";" + items.Nutrient + ";" + items.Store + ";" + items.Store1 + ";" + items.Store2 + ";" + items.Fact);
-                    itemListBox.Items.Add(items.Item);
+
+                    //https://stackoverflow.com/questions/4937060/how-to-check-if-listt-element-contains-an-item-with-a-particular-property-valu
+                    // Check to see if item exists in our category before adding it to our itemListBox.Items list.
+                    int index = _Category._Items.FindIndex(it => it._Name == items.Item);
+                    if (index >= 0)
+                    {
+                        itemListBox.Items.Add(items.Item);
+                    }
+
                 }
 
             }
@@ -124,6 +132,7 @@ namespace produce_quantity
             {
                 MessageBox.Show(ex.Message);
             }
+
         }
 
         private void itemListBox_SelectedIndexChanged(object sender, EventArgs e)
