@@ -14,7 +14,8 @@ namespace produce_quantity
 {
     public partial class Form1 : Form
     {
-       
+        string items = "";
+        List<string> vs = new List<string>();
 
         Category _Category;
         public Form1(Category category)
@@ -101,13 +102,55 @@ namespace produce_quantity
 
         private void Form1_Load(object sender, EventArgs e)
         {
-   
+            try
+            {
+                StreamReader inputFile;
+                inputFile = File.OpenText("data.txt");
+
+                string lines;
+
+                while (!inputFile.EndOfStream)
+                {
+                    lines = inputFile.ReadLine();
+                    string[] tokens = lines.Split(',');
+
+                    itemInfo items = new itemInfo(tokens[0], tokens[1], tokens[2], tokens[3], tokens[4], tokens[5]);
+                    vs.Add(items.Item + ";" + items.Nutrient + ";" + items.Store + ";" + items.Store1 + ";" + items.Store2 + ";" + items.Fact);
+                    itemListBox.Items.Add(items.Item);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
-        private void testListBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void itemListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-        
-        }
+            items = itemListBox.SelectedItem.ToString();
+            Form4 newForm = new Form4();
 
+            Label label2 = new Label();
+            label2.Size = new Size(500, 500);
+            label2.Location = new Point(10, 10);
+            label2.Font = new Font("Microsoft Sans Serif", 12, FontStyle.Bold);
+
+            foreach (string str in vs)
+            {
+                if (str.Contains(items))
+                {
+                    string[] tokens = str.Split(';');
+                    label2.Text += "Item: " + tokens[0] + "\n" +
+                                    "Nutrient Information: " + tokens[1] + "\n" +
+                                    "Stores that Carry: " + tokens[2] + ", "  + tokens[3] + ", " + tokens[4] + "\n" +
+                                    "Random Fact: " + tokens[5];
+                }
+            }
+
+            newForm.Controls.Add(label2);
+            newForm.ShowDialog();
+        }
     }
+    
 }
