@@ -48,8 +48,8 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.itemListBox = new System.Windows.Forms.ListBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.itemListBox = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -258,16 +258,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Grocery Items";
             // 
-            // itemListBox
-            // 
-            this.itemListBox.FormattingEnabled = true;
-            this.itemListBox.ItemHeight = 20;
-            this.itemListBox.Location = new System.Drawing.Point(530, 237);
-            this.itemListBox.Name = "itemListBox";
-            this.itemListBox.Size = new System.Drawing.Size(193, 184);
-            this.itemListBox.TabIndex = 24;
-            this.itemListBox.SelectedIndexChanged += new System.EventHandler(this.itemListBox_SelectedIndexChanged);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -277,6 +267,16 @@
             this.label6.Size = new System.Drawing.Size(244, 16);
             this.label6.TabIndex = 25;
             this.label6.Text = "Select an item to learn more information!";
+            // 
+            // itemListBox
+            // 
+            this.itemListBox.FormattingEnabled = true;
+            this.itemListBox.ItemHeight = 20;
+            this.itemListBox.Location = new System.Drawing.Point(530, 237);
+            this.itemListBox.Name = "itemListBox";
+            this.itemListBox.Size = new System.Drawing.Size(193, 104);
+            this.itemListBox.TabIndex = 24;
+            this.itemListBox.SelectedIndexChanged += new System.EventHandler(this.itemListBox_SelectedIndexChanged);
             // 
             // Form1
             // 

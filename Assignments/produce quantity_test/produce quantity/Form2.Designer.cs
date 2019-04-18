@@ -244,7 +244,7 @@
             // 
             // clearTextLabelButton
             // 
-            this.clearTextLabelButton.Location = new System.Drawing.Point(310, 640);
+            this.clearTextLabelButton.Location = new System.Drawing.Point(242, 640);
             this.clearTextLabelButton.Name = "clearTextLabelButton";
             this.clearTextLabelButton.Size = new System.Drawing.Size(75, 38);
             this.clearTextLabelButton.TabIndex = 19;
@@ -254,7 +254,7 @@
             // 
             // printButton
             // 
-            this.printButton.Location = new System.Drawing.Point(421, 640);
+            this.printButton.Location = new System.Drawing.Point(353, 640);
             this.printButton.Name = "printButton";
             this.printButton.Size = new System.Drawing.Size(75, 38);
             this.printButton.TabIndex = 20;

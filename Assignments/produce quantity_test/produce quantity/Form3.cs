@@ -190,7 +190,7 @@ namespace produce_quantity
 
         private void produceButton_Click(object sender, EventArgs e)
         {
-            GroceryItem apple = new GroceryItem("Appple");
+            GroceryItem apple = new GroceryItem("Apple");
             GroceryItem brocoli = new GroceryItem("Brocoli");
             GroceryItem potato = new GroceryItem("Potato");
             GroceryItem pear = new GroceryItem("Pear");
