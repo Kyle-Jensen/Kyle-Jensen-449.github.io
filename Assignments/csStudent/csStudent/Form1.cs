@@ -16,5 +16,10 @@ namespace csStudent
         {
             InitializeComponent();
         }
+
+        private void getHoursButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
