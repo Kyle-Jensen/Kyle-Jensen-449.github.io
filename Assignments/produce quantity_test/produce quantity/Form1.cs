@@ -120,7 +120,7 @@ namespace produce_quantity
                     //https://stackoverflow.com/questions/4937060/how-to-check-if-listt-element-contains-an-item-with-a-particular-property-valu
                     // Check to see if item exists in our category before adding it to our itemListBox.Items list.
                     int index = _Category._Items.FindIndex(it => it._Name == items.Item);
-                    if (index >= 0)
+                    if (index >= 4)
                     {
                         itemListBox.Items.Add(items.Item);
                     }
