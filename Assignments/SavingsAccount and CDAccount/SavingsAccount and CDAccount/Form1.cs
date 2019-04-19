@@ -73,7 +73,14 @@ namespace SavingsAccount_and_CDAccount
             balanceLabel.Text = myAccount.Balance.ToString("c");
             maturityDateLabel.Text = myAccount.MaturityDate;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Close the form.
+            this.Close();
+        }
     }
+    
 
 
 }
