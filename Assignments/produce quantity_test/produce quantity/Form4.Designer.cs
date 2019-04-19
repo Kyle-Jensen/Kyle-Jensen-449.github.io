@@ -33,7 +33,7 @@
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(193, 98);
+            this.exitButton.Location = new System.Drawing.Point(209, 117);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 48);
             this.exitButton.TabIndex = 0;
@@ -45,9 +45,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 158);
+            this.ClientSize = new System.Drawing.Size(514, 175);
             this.Controls.Add(this.exitButton);
             this.Name = "Form4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";
             this.ResumeLayout(false);
 

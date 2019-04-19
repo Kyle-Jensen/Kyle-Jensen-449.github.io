@@ -289,6 +289,7 @@ namespace produce_quantity
             }
             outputFile.Close();
 
+
             PrintDialog print = new PrintDialog();
             print.ShowDialog();
 

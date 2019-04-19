@@ -14,7 +14,7 @@ namespace produce_quantity
 {
     public partial class Form1 : Form
     {
-        int i;
+        
         string items = "";
         List<string> vs = new List<string>();
 
@@ -30,7 +30,7 @@ namespace produce_quantity
             label4.Text = category._Items.ElementAtOrDefault(3)._Name;
             label5.Text = category._Items.ElementAtOrDefault(4)._Name;
 
-            i = 0;
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -163,16 +163,81 @@ namespace produce_quantity
             newForm.Controls.Add(label2);
             newForm.ShowDialog();
         }
+        private int a = 0;
+        private int b = 0;
+        private int c = 0;
+        private int d = 0;
+        private int ee = 0;
+        private void upArrowPictureBox_Click(object sender, EventArgs e)
+        {
+            a++;
+            textBox1.Text = a.ToString();
+        }
 
+        private void downArrowPictureBox_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = (--a).ToString();
+            if (a < 0)
+            {
+                MessageBox.Show("You can't have negative items!");
+            }
+        }
+        
         private void upArrow1PictureBox_Click(object sender, EventArgs e)
         {
-            textBox1.Text = (++i).ToString();
+            b++;
+            textBox2.Text = b.ToString();
+        }
+
+        private void downArrow1PictureBox_Click(object sender, EventArgs e)
+        {
+            textBox2.Text = (--b).ToString();
+            if (b < 0)
+            {
+                MessageBox.Show("You can't have negative items!");
+            }
         }
 
         private void upArrow2PictureBox_Click(object sender, EventArgs e)
         {
-            textBox1.Text = (--i).ToString();
-            if (i < 0)
+            c++;
+            textBox5.Text = c.ToString();
+        }
+
+        private void downArrow2PictureBox_Click(object sender, EventArgs e)
+        {
+            textBox5.Text = (--c).ToString();
+            if (c < 0)
+            {
+                MessageBox.Show("You can't have negative items!");
+            }
+        }
+
+        private void upArrow3PictureBox_Click(object sender, EventArgs e)
+        {
+            d++;
+            textBox3.Text = d.ToString();
+        }
+
+        private void downArrow3PictureBox_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = (--d).ToString();
+            if (d < 0)
+            {
+                MessageBox.Show("You can't have negative items!");
+            }
+        }
+
+        private void upArrow4PictureBox_Click(object sender, EventArgs e)
+        {
+            ee++;
+            textBox4.Text = ee.ToString();
+        }
+
+        private void downArrow4PictureBox_Click(object sender, EventArgs e)
+        {
+            textBox4.Text = (--ee).ToString();
+            if (ee < 0)
             {
                 MessageBox.Show("You can't have negative items!");
             }

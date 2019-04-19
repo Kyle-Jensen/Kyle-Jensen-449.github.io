@@ -51,16 +51,32 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.itemListBox = new System.Windows.Forms.ListBox();
+            this.upArrowPictureBox = new System.Windows.Forms.PictureBox();
+            this.downArrowPictureBox = new System.Windows.Forms.PictureBox();
             this.upArrow1PictureBox = new System.Windows.Forms.PictureBox();
+            this.downArrow1PictureBox = new System.Windows.Forms.PictureBox();
             this.upArrow2PictureBox = new System.Windows.Forms.PictureBox();
+            this.downArrow2PictureBox = new System.Windows.Forms.PictureBox();
+            this.upArrow3PictureBox = new System.Windows.Forms.PictureBox();
+            this.downArrow3PictureBox = new System.Windows.Forms.PictureBox();
+            this.upArrow4PictureBox = new System.Windows.Forms.PictureBox();
+            this.downArrow4PictureBox = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.upArrowPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.downArrowPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.upArrow1PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.downArrow1PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.upArrow2PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.downArrow2PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upArrow3PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.downArrow3PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upArrow4PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.downArrow4PictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -76,14 +92,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(70, 45);
+            this.textBox1.Location = new System.Drawing.Point(70, 41);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(29, 26);
             this.textBox1.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(257, 354);
+            this.button1.Location = new System.Drawing.Point(303, 354);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 37);
             this.button1.TabIndex = 2;
@@ -93,7 +109,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(75, 59);
+            this.textBox2.Location = new System.Drawing.Point(75, 41);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(29, 26);
             this.textBox2.TabIndex = 3;
@@ -114,7 +130,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(81, 59);
+            this.textBox5.Location = new System.Drawing.Point(80, 41);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(29, 26);
             this.textBox5.TabIndex = 6;
@@ -165,7 +181,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(378, 354);
+            this.button2.Location = new System.Drawing.Point(424, 354);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 37);
             this.button2.TabIndex = 11;
@@ -197,53 +213,61 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.upArrow1PictureBox);
-            this.panel1.Controls.Add(this.upArrow2PictureBox);
+            this.panel1.Controls.Add(this.upArrowPictureBox);
+            this.panel1.Controls.Add(this.downArrowPictureBox);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(75, 69);
+            this.panel1.Location = new System.Drawing.Point(41, 69);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(193, 117);
+            this.panel1.Size = new System.Drawing.Size(227, 117);
             this.panel1.TabIndex = 14;
             // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.upArrow1PictureBox);
+            this.panel2.Controls.Add(this.downArrow1PictureBox);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Location = new System.Drawing.Point(301, 69);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(193, 117);
+            this.panel2.Size = new System.Drawing.Size(227, 117);
             this.panel2.TabIndex = 2;
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.upArrow3PictureBox);
             this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.downArrow3PictureBox);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(75, 207);
+            this.panel3.Location = new System.Drawing.Point(41, 207);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(193, 117);
+            this.panel3.Size = new System.Drawing.Size(227, 117);
             this.panel3.TabIndex = 15;
             // 
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.upArrow4PictureBox);
+            this.panel4.Controls.Add(this.downArrow4PictureBox);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.textBox4);
             this.panel4.Location = new System.Drawing.Point(301, 207);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(193, 117);
+            this.panel4.Size = new System.Drawing.Size(227, 117);
             this.panel4.TabIndex = 16;
             // 
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel5.Controls.Add(this.upArrow2PictureBox);
+            this.panel5.Controls.Add(this.downArrow2PictureBox);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.textBox5);
-            this.panel5.Location = new System.Drawing.Point(530, 69);
+            this.panel5.Location = new System.Drawing.Point(562, 69);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(193, 117);
+            this.panel5.Size = new System.Drawing.Size(227, 117);
             this.panel5.TabIndex = 17;
             // 
             // groupBox1
@@ -260,7 +284,7 @@
             this.groupBox1.Controls.Add(this.panel2);
             this.groupBox1.Location = new System.Drawing.Point(12, 58);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(750, 439);
+            this.groupBox1.Size = new System.Drawing.Size(825, 439);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Grocery Items";
@@ -269,7 +293,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(500, 207);
+            this.label6.Location = new System.Drawing.Point(548, 206);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(244, 16);
             this.label6.TabIndex = 25;
@@ -279,44 +303,133 @@
             // 
             this.itemListBox.FormattingEnabled = true;
             this.itemListBox.ItemHeight = 20;
-            this.itemListBox.Location = new System.Drawing.Point(530, 237);
+            this.itemListBox.Location = new System.Drawing.Point(578, 236);
             this.itemListBox.Name = "itemListBox";
             this.itemListBox.Size = new System.Drawing.Size(193, 104);
             this.itemListBox.TabIndex = 24;
             this.itemListBox.SelectedIndexChanged += new System.EventHandler(this.itemListBox_SelectedIndexChanged);
             // 
+            // upArrowPictureBox
+            // 
+            this.upArrowPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("upArrowPictureBox.Image")));
+            this.upArrowPictureBox.Location = new System.Drawing.Point(166, 5);
+            this.upArrowPictureBox.Name = "upArrowPictureBox";
+            this.upArrowPictureBox.Size = new System.Drawing.Size(44, 46);
+            this.upArrowPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.upArrowPictureBox.TabIndex = 26;
+            this.upArrowPictureBox.TabStop = false;
+            this.upArrowPictureBox.Click += new System.EventHandler(this.upArrowPictureBox_Click);
+            // 
+            // downArrowPictureBox
+            // 
+            this.downArrowPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("downArrowPictureBox.Image")));
+            this.downArrowPictureBox.Location = new System.Drawing.Point(166, 57);
+            this.downArrowPictureBox.Name = "downArrowPictureBox";
+            this.downArrowPictureBox.Size = new System.Drawing.Size(44, 46);
+            this.downArrowPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.downArrowPictureBox.TabIndex = 27;
+            this.downArrowPictureBox.TabStop = false;
+            this.downArrowPictureBox.Click += new System.EventHandler(this.downArrowPictureBox_Click);
+            // 
             // upArrow1PictureBox
             // 
             this.upArrow1PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("upArrow1PictureBox.Image")));
-            this.upArrow1PictureBox.Location = new System.Drawing.Point(125, 7);
+            this.upArrow1PictureBox.Location = new System.Drawing.Point(164, 5);
             this.upArrow1PictureBox.Name = "upArrow1PictureBox";
             this.upArrow1PictureBox.Size = new System.Drawing.Size(44, 46);
             this.upArrow1PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.upArrow1PictureBox.TabIndex = 19;
+            this.upArrow1PictureBox.TabIndex = 28;
             this.upArrow1PictureBox.TabStop = false;
             this.upArrow1PictureBox.Click += new System.EventHandler(this.upArrow1PictureBox_Click);
+            // 
+            // downArrow1PictureBox
+            // 
+            this.downArrow1PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("downArrow1PictureBox.Image")));
+            this.downArrow1PictureBox.Location = new System.Drawing.Point(164, 57);
+            this.downArrow1PictureBox.Name = "downArrow1PictureBox";
+            this.downArrow1PictureBox.Size = new System.Drawing.Size(44, 46);
+            this.downArrow1PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.downArrow1PictureBox.TabIndex = 29;
+            this.downArrow1PictureBox.TabStop = false;
+            this.downArrow1PictureBox.Click += new System.EventHandler(this.downArrow1PictureBox_Click);
             // 
             // upArrow2PictureBox
             // 
             this.upArrow2PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("upArrow2PictureBox.Image")));
-            this.upArrow2PictureBox.Location = new System.Drawing.Point(125, 59);
+            this.upArrow2PictureBox.Location = new System.Drawing.Point(163, 5);
             this.upArrow2PictureBox.Name = "upArrow2PictureBox";
             this.upArrow2PictureBox.Size = new System.Drawing.Size(44, 46);
             this.upArrow2PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.upArrow2PictureBox.TabIndex = 20;
+            this.upArrow2PictureBox.TabIndex = 30;
             this.upArrow2PictureBox.TabStop = false;
             this.upArrow2PictureBox.Click += new System.EventHandler(this.upArrow2PictureBox_Click);
+            // 
+            // downArrow2PictureBox
+            // 
+            this.downArrow2PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("downArrow2PictureBox.Image")));
+            this.downArrow2PictureBox.Location = new System.Drawing.Point(163, 57);
+            this.downArrow2PictureBox.Name = "downArrow2PictureBox";
+            this.downArrow2PictureBox.Size = new System.Drawing.Size(44, 46);
+            this.downArrow2PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.downArrow2PictureBox.TabIndex = 31;
+            this.downArrow2PictureBox.TabStop = false;
+            this.downArrow2PictureBox.Click += new System.EventHandler(this.downArrow2PictureBox_Click);
+            // 
+            // upArrow3PictureBox
+            // 
+            this.upArrow3PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("upArrow3PictureBox.Image")));
+            this.upArrow3PictureBox.Location = new System.Drawing.Point(166, 12);
+            this.upArrow3PictureBox.Name = "upArrow3PictureBox";
+            this.upArrow3PictureBox.Size = new System.Drawing.Size(44, 46);
+            this.upArrow3PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.upArrow3PictureBox.TabIndex = 28;
+            this.upArrow3PictureBox.TabStop = false;
+            this.upArrow3PictureBox.Click += new System.EventHandler(this.upArrow3PictureBox_Click);
+            // 
+            // downArrow3PictureBox
+            // 
+            this.downArrow3PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("downArrow3PictureBox.Image")));
+            this.downArrow3PictureBox.Location = new System.Drawing.Point(166, 64);
+            this.downArrow3PictureBox.Name = "downArrow3PictureBox";
+            this.downArrow3PictureBox.Size = new System.Drawing.Size(44, 46);
+            this.downArrow3PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.downArrow3PictureBox.TabIndex = 29;
+            this.downArrow3PictureBox.TabStop = false;
+            this.downArrow3PictureBox.Click += new System.EventHandler(this.downArrow3PictureBox_Click);
+            // 
+            // upArrow4PictureBox
+            // 
+            this.upArrow4PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("upArrow4PictureBox.Image")));
+            this.upArrow4PictureBox.Location = new System.Drawing.Point(164, 12);
+            this.upArrow4PictureBox.Name = "upArrow4PictureBox";
+            this.upArrow4PictureBox.Size = new System.Drawing.Size(44, 46);
+            this.upArrow4PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.upArrow4PictureBox.TabIndex = 30;
+            this.upArrow4PictureBox.TabStop = false;
+            this.upArrow4PictureBox.Click += new System.EventHandler(this.upArrow4PictureBox_Click);
+            // 
+            // downArrow4PictureBox
+            // 
+            this.downArrow4PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("downArrow4PictureBox.Image")));
+            this.downArrow4PictureBox.Location = new System.Drawing.Point(164, 64);
+            this.downArrow4PictureBox.Name = "downArrow4PictureBox";
+            this.downArrow4PictureBox.Size = new System.Drawing.Size(44, 46);
+            this.downArrow4PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.downArrow4PictureBox.TabIndex = 31;
+            this.downArrow4PictureBox.TabStop = false;
+            this.downArrow4PictureBox.Click += new System.EventHandler(this.downArrow4PictureBox_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 516);
+            this.ClientSize = new System.Drawing.Size(868, 516);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.backButton);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
@@ -331,8 +444,16 @@
             this.panel5.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.upArrowPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.downArrowPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.upArrow1PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.downArrow1PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.upArrow2PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.downArrow2PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upArrow3PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.downArrow3PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upArrow4PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.downArrow4PictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -361,8 +482,16 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ListBox itemListBox;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox upArrowPictureBox;
+        private System.Windows.Forms.PictureBox downArrowPictureBox;
         private System.Windows.Forms.PictureBox upArrow1PictureBox;
+        private System.Windows.Forms.PictureBox downArrow1PictureBox;
+        private System.Windows.Forms.PictureBox upArrow3PictureBox;
+        private System.Windows.Forms.PictureBox downArrow3PictureBox;
+        private System.Windows.Forms.PictureBox upArrow4PictureBox;
+        private System.Windows.Forms.PictureBox downArrow4PictureBox;
         private System.Windows.Forms.PictureBox upArrow2PictureBox;
+        private System.Windows.Forms.PictureBox downArrow2PictureBox;
     }
 }
 
