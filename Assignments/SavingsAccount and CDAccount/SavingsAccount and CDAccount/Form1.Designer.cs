@@ -30,7 +30,7 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.createObjectButton = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.inputMaturityDateLabel = new System.Windows.Forms.Label();
             this.inputBalanceLabel = new System.Windows.Forms.Label();
@@ -44,10 +44,10 @@
             this.balanceTextBox = new System.Windows.Forms.TextBox();
             this.interestRateTextBox = new System.Windows.Forms.TextBox();
             this.accountNumberTextBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.maturityDateLabel = new System.Windows.Forms.Label();
+            this.balanceLabel = new System.Windows.Forms.Label();
+            this.interestRateLabel = new System.Windows.Forms.Label();
+            this.accountNumberLabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -71,13 +71,13 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.maturityDateLabel);
+            this.groupBox2.Controls.Add(this.balanceLabel);
+            this.groupBox2.Controls.Add(this.interestRateLabel);
+            this.groupBox2.Controls.Add(this.accountNumberLabel);
             this.groupBox2.Controls.Add(this.outputMaturityDateLabel);
-            this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.outputAccountNumberLabel);
-            this.groupBox2.Controls.Add(this.textBox3);
             this.groupBox2.Controls.Add(this.outputBalanceLabel);
-            this.groupBox2.Controls.Add(this.textBox4);
             this.groupBox2.Controls.Add(this.outoutInterestRateLabel);
             this.groupBox2.Location = new System.Drawing.Point(12, 183);
             this.groupBox2.Name = "groupBox2";
@@ -86,14 +86,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Object Properties";
             // 
-            // button1
+            // createObjectButton
             // 
-            this.button1.Location = new System.Drawing.Point(41, 342);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 43);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Create Object";
-            this.button1.UseVisualStyleBackColor = true;
+            this.createObjectButton.Location = new System.Drawing.Point(41, 342);
+            this.createObjectButton.Name = "createObjectButton";
+            this.createObjectButton.Size = new System.Drawing.Size(75, 43);
+            this.createObjectButton.TabIndex = 0;
+            this.createObjectButton.Text = "Create Object";
+            this.createObjectButton.UseVisualStyleBackColor = true;
+            this.createObjectButton.Click += new System.EventHandler(this.createObjectButton_Click);
             // 
             // button2
             // 
@@ -204,40 +205,48 @@
             this.accountNumberTextBox.Size = new System.Drawing.Size(122, 20);
             this.accountNumberTextBox.TabIndex = 9;
             // 
-            // textBox1
+            // maturityDateLabel
             // 
-            this.textBox1.Location = new System.Drawing.Point(108, 107);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(122, 20);
-            this.textBox1.TabIndex = 16;
+            this.maturityDateLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.maturityDateLabel.Location = new System.Drawing.Point(109, 105);
+            this.maturityDateLabel.Name = "maturityDateLabel";
+            this.maturityDateLabel.Size = new System.Drawing.Size(122, 23);
+            this.maturityDateLabel.TabIndex = 26;
+            this.maturityDateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox2
+            // balanceLabel
             // 
-            this.textBox2.Location = new System.Drawing.Point(109, 81);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(122, 20);
-            this.textBox2.TabIndex = 15;
+            this.balanceLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.balanceLabel.Location = new System.Drawing.Point(109, 79);
+            this.balanceLabel.Name = "balanceLabel";
+            this.balanceLabel.Size = new System.Drawing.Size(122, 23);
+            this.balanceLabel.TabIndex = 25;
+            this.balanceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox3
+            // interestRateLabel
             // 
-            this.textBox3.Location = new System.Drawing.Point(109, 55);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(122, 20);
-            this.textBox3.TabIndex = 14;
+            this.interestRateLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.interestRateLabel.Location = new System.Drawing.Point(109, 53);
+            this.interestRateLabel.Name = "interestRateLabel";
+            this.interestRateLabel.Size = new System.Drawing.Size(122, 23);
+            this.interestRateLabel.TabIndex = 24;
+            this.interestRateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox4
+            // accountNumberLabel
             // 
-            this.textBox4.Location = new System.Drawing.Point(109, 29);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(122, 20);
-            this.textBox4.TabIndex = 13;
+            this.accountNumberLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.accountNumberLabel.Location = new System.Drawing.Point(109, 27);
+            this.accountNumberLabel.Name = "accountNumberLabel";
+            this.accountNumberLabel.Size = new System.Drawing.Size(122, 23);
+            this.accountNumberLabel.TabIndex = 23;
+            this.accountNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(275, 398);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.createObjectButton);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -263,16 +272,16 @@
         private System.Windows.Forms.Label inputBalanceLabel;
         private System.Windows.Forms.Label inputInterestRatelLabel;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label outputMaturityDateLabel;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label outputAccountNumberLabel;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label outputBalanceLabel;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label outoutInterestRateLabel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button createObjectButton;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label maturityDateLabel;
+        private System.Windows.Forms.Label balanceLabel;
+        private System.Windows.Forms.Label interestRateLabel;
+        private System.Windows.Forms.Label accountNumberLabel;
     }
 }
 
