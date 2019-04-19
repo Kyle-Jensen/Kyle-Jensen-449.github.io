@@ -16,5 +16,18 @@ namespace SavingsAccount_and_CDAccount
         {
             InitializeComponent();
         }
+        // The GetCDData method accepts a CDAccount object
+        // asn an argument. It assigns the data entered by
+        // the user to the object's properties.
+        private void GetCDData(CDAccount account)
+        {
+
+            // Temporary variables to hold interest rate
+            // and balance
+            decimal interestRate;
+            decimal balance;
+        }
     }
+
+
 }
