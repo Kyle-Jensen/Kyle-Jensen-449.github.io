@@ -36,7 +36,7 @@ namespace csStudent
             get { return MATH_HOURS + CS_HOURS + GEN_HOURS; }
         }
     }
-    {
+    
 
-    }
+    
 }
