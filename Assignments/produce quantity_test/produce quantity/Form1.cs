@@ -14,6 +14,7 @@ namespace produce_quantity
 {
     public partial class Form1 : Form
     {
+        int i;
         string items = "";
         List<string> vs = new List<string>();
 
@@ -28,6 +29,8 @@ namespace produce_quantity
             label3.Text = category._Items.ElementAtOrDefault(2)._Name;
             label4.Text = category._Items.ElementAtOrDefault(3)._Name;
             label5.Text = category._Items.ElementAtOrDefault(4)._Name;
+
+            i = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -159,6 +162,20 @@ namespace produce_quantity
 
             newForm.Controls.Add(label2);
             newForm.ShowDialog();
+        }
+
+        private void upArrow1PictureBox_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = (++i).ToString();
+        }
+
+        private void upArrow2PictureBox_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = (--i).ToString();
+            if (i < 0)
+            {
+                MessageBox.Show("You can't have negative items!");
+            }
         }
     }
     

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -50,12 +51,16 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.itemListBox = new System.Windows.Forms.ListBox();
+            this.upArrow1PictureBox = new System.Windows.Forms.PictureBox();
+            this.upArrow2PictureBox = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.upArrow1PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upArrow2PictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -71,7 +76,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(81, 57);
+            this.textBox1.Location = new System.Drawing.Point(70, 45);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(29, 26);
             this.textBox1.TabIndex = 1;
@@ -192,6 +197,8 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.upArrow1PictureBox);
+            this.panel1.Controls.Add(this.upArrow2PictureBox);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(75, 69);
@@ -278,6 +285,28 @@
             this.itemListBox.TabIndex = 24;
             this.itemListBox.SelectedIndexChanged += new System.EventHandler(this.itemListBox_SelectedIndexChanged);
             // 
+            // upArrow1PictureBox
+            // 
+            this.upArrow1PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("upArrow1PictureBox.Image")));
+            this.upArrow1PictureBox.Location = new System.Drawing.Point(125, 7);
+            this.upArrow1PictureBox.Name = "upArrow1PictureBox";
+            this.upArrow1PictureBox.Size = new System.Drawing.Size(44, 46);
+            this.upArrow1PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.upArrow1PictureBox.TabIndex = 19;
+            this.upArrow1PictureBox.TabStop = false;
+            this.upArrow1PictureBox.Click += new System.EventHandler(this.upArrow1PictureBox_Click);
+            // 
+            // upArrow2PictureBox
+            // 
+            this.upArrow2PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("upArrow2PictureBox.Image")));
+            this.upArrow2PictureBox.Location = new System.Drawing.Point(125, 59);
+            this.upArrow2PictureBox.Name = "upArrow2PictureBox";
+            this.upArrow2PictureBox.Size = new System.Drawing.Size(44, 46);
+            this.upArrow2PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.upArrow2PictureBox.TabIndex = 20;
+            this.upArrow2PictureBox.TabStop = false;
+            this.upArrow2PictureBox.Click += new System.EventHandler(this.upArrow2PictureBox_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -302,6 +331,8 @@
             this.panel5.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.upArrow1PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.upArrow2PictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -330,6 +361,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ListBox itemListBox;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox upArrow1PictureBox;
+        private System.Windows.Forms.PictureBox upArrow2PictureBox;
     }
 }
 
