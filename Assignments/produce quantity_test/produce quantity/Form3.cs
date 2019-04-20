@@ -252,7 +252,7 @@ namespace produce_quantity
         {
             Form5 f = new Form5();
             f.Show();
-            this.Hide();
+            
         }
     }
 }
