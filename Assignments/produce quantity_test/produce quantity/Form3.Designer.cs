@@ -80,8 +80,9 @@
             this.accountButton.Name = "accountButton";
             this.accountButton.Size = new System.Drawing.Size(80, 58);
             this.accountButton.TabIndex = 1;
-            this.accountButton.Text = "Account";
+            this.accountButton.Text = "Item Info";
             this.accountButton.UseVisualStyleBackColor = true;
+            this.accountButton.Click += new System.EventHandler(this.accountButton_Click);
             // 
             // listButton
             // 
