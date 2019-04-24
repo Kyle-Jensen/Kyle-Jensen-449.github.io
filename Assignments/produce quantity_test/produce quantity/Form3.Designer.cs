@@ -75,12 +75,12 @@
             // 
             // accountButton
             // 
-            this.accountButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accountButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accountButton.Location = new System.Drawing.Point(55, 1);
             this.accountButton.Name = "accountButton";
             this.accountButton.Size = new System.Drawing.Size(80, 58);
             this.accountButton.TabIndex = 1;
-            this.accountButton.Text = "Item Info";
+            this.accountButton.Text = "Item Location && Info";
             this.accountButton.UseVisualStyleBackColor = true;
             this.accountButton.Click += new System.EventHandler(this.accountButton_Click);
             // 
