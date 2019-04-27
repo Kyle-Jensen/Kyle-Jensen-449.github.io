@@ -1,5 +1,0 @@
-Bread: 3
-Muffin: 6
-Pie: 9
-Cookie: 1
-Buns: 4

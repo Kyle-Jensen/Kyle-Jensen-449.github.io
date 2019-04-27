@@ -1,3 +1,2 @@
-Tuna: 1
-Spam: 1
-Sliced Beans: 1
+Tuna: 2
+Sliced Beans: 3

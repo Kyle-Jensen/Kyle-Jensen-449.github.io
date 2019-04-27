@@ -1,8 +1,10 @@
+Brocoli: 3
 Tuna: 2
-Baked Beans: 2
-Sliced Beans: 2
-Milk: 2
-Eggs: 6
-Cream: 1
-Sandwich: 3
-Sliced Meat: 2
+Sliced Beans: 3
+Muffin: 4
+Eggs: 3
+Sandwich: 4
+Frozen Vegetables: 4
+Chicken: 3
+Fruit Snacks: 3
+Lobster: 3

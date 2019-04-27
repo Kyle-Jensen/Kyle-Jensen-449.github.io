@@ -1,5 +1,0 @@
-Bread: 5
-Muffin: 
-Pie: 
-Cookie: 5
-Canned Tomatoes: 
