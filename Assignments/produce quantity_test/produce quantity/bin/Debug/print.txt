@@ -1,0 +1,8 @@
+Tuna: 2
+Baked Beans: 2
+Sliced Beans: 2
+Milk: 2
+Eggs: 6
+Cream: 1
+Sandwich: 3
+Sliced Meat: 2

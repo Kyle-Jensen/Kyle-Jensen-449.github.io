@@ -1,0 +1,10 @@
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\csStudent\csStudent\bin\Debug\csStudent.exe.config
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\csStudent\csStudent\bin\Debug\csStudent.exe
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\csStudent\csStudent\bin\Debug\csStudent.pdb
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\csStudent\csStudent\obj\Debug\csStudent.csprojAssemblyReference.cache
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\csStudent\csStudent\obj\Debug\csStudent.Form1.resources
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\csStudent\csStudent\obj\Debug\csStudent.Properties.Resources.resources
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\csStudent\csStudent\obj\Debug\csStudent.csproj.GenerateResource.cache
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\csStudent\csStudent\obj\Debug\csStudent.csproj.CoreCompileInputs.cache
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\csStudent\csStudent\obj\Debug\csStudent.exe
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\csStudent\csStudent\obj\Debug\csStudent.pdb

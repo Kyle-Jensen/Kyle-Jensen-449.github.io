@@ -1,0 +1,45 @@
+Tuna,Calories: 50,Walmart,Target,and Meijer,Did you know that the antioxidants in tuna can prevent cancer?!
+Baked Beans,Calories: 392,Walmart,Target,and Meijer,Did you know that baked beans can prevent a fatty liver?!
+Spam,Calories: 174,Walmart,Target,and Meijer,Did you know that Hormel produces 44000 cans of Spam every hour?!
+Sliced Beans,Calories: 20,Walmart,Target,and Meijer,Did you know that this item are a good source of potasssium?!
+Canned Tomatoes,Calories: 39,Walmart,Target,and Meijer,Did you know that is item can be used with over 100 recipes?!
+Bread,Calories: 79,Walmart,Target,and Meijer,Did you know that April 1st is National Sourdough Bread Day?!
+Muffin,Calories: 426,Walmart,Target,and Meijer,Did you know that four states have adopted a State Muffin?!
+Pie,Calories: 67,Walmart,Target,and Meijer,Did you know that apple pie is the USA favorite pie?!
+Cookie,Calories: 142,Walmart,Target,and Meijer,Did you know that the best selling cookie is Oreo?!
+Buns,Calories: 120,Walmart,Target,and Meijer,Did you know that this item are great for hamburgers?!
+Milk,Calories: 103,Walmart,Target,and Meijer,Did you know that this item can provide a 48 percent of protein requirements for children?!
+Butter,Calories: 102,Walmart,Target,and Meijer,Did you know that Inda is the largest producer of butter?!
+Eggs,Calories: 78,Walmart,Target,and Meijer,Did you know that eggs contain the highest quality protein you can buy?!
+Cream,Calories: 51,Walmart,Target,and Meijer,Did you know that this item used to be called milk snow?!
+Yogurt,Calories: 100,Walmart,Target,and Meijer,Did you know that this item is can prevent digestive problems?!
+Sandwich,Calories: 106,Walmart,Target,and Meijer,Did you know that 300 million sandwiches are made everyday in America alone?!
+Salad,Calories: 194,Walmart,Target,and Meijer,Did you know that Caesar Salad is named after the Chef and not the Roman Emperor?!
+Wrap,Calories: 140,Walmart,Target,and Meijer,Did you know that wraps are lower in carbs than a sandwich?!
+Sliced Meat,Calories: 99,Walmart,Target,and Meijer,Did you know that Americans eat about $2 billion worth of cold cuts per year?!
+Sliced Cheese,Calories: 104,Walmart,Target,and Meijer,Did you know that processed cheese was developed in 1915?!
+Icecream,Calories: 137,Walmart,Target,and Meijer,Did you know that the tallest snow cone was over 9ft tall?!
+Frozen Vegetables,Calories: 55,Walmart,Target,and Meijer,Did you know that these are regular vegetables but frozen?!
+Frozen Fruits,Calories: 10,Walmart,Target,and Meijer,Did you know that this item is amazing?!
+Frozen Pizza,Calories: 399,Walmart,Target,and Meijer,Did you know can order pizza from space?!
+Frozen Pretzel,Calories: 10,Walmart,Target,and Meijer,Did you know that this item is amazing?!
+Steak,Calories: 679,Walmart,Target,and Meijer,Did you know steak makes up 40% of the cow?!
+Chicken,Calories: 335,Walmart,Target,and Meijer,Did you know that chickens can see more color than humans?!
+Pork,Calories: 206,Walmart,Target,and Meijer,Did you know that pork is the most widely consumed meat?!
+Lamb,Calories: 250,Walmart,Target,and Meijer,Did you know that some flocks of sheep can have as many 10000?!
+Veal,Calories: 146,Walmart,Target,and Meijer,Did you know that veal is delicious!
+Cereal,Calories: 307,Walmart,Target,and Meijer,Did you know that this item is 2 billion boxes of cereal is sold every year?!
+Chips,Calories: 152,Walmart,Target,and Meijer,Did you know that this item is America's favorite snack?!
+Crackers,Calories: 81,Walmart,Target,and Meijer,Did you know that this item has been in existence since the 18th century?!
+Popcorn,Calories: 106,Walmart,Target,and Meijer,Did you know that this item is over 5000 years old?!
+Fruit Snacks,Calories: 89,Walmart,Target,and Meijer,Did you know that this item are fat free?!
+Apple,Calories: 95,Walmart,Target,and Meijer,Did you know that this item is two pounds of apples make one 9 inch pie?!
+Brocoli,Calories: 50,Walmart,Target,and Meijer,Did you know that ounce of brocolie has more calcium than an ounce of milk?!
+Potato,Calories: 163,Walmart,Target,and Meijer,Did you know that this item is a vegetable but has as much starches as most pastas?!
+Pear,Calories: 96,Walmart,Target,and Meijer,Did you know that ancient Greeks use pears as a remedy to nausea!
+Corn,Calories: 86,Walmart,Target,and Meijer,Did you know that every individual kernel is a seed?!
+Salmon,Calories: 412,Walmart,Target,and Meijer,Did you know that salmons can swim in both salt and fresh water?!
+Trout,Calories: 111,Walmart,Target,and Meijer,Did you know that trout's spend most of theri day eating?!
+Shrimp,Calories: 85,Walmart,Target,and Meijer,Did you know that one billion pounds of shrimp are eaten every year by Americans?!
+Crab,Calories: 120,Walmart,Target,and Meijer,Did you know that there are over 4500 species of crabs?!
+Lobster,Calories: 129,Walmart,Target,and Meijer,Did you know that lobster's were once considered a poor man's chicken?!

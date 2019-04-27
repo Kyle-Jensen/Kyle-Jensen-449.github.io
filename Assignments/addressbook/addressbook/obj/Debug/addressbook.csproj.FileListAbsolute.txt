@@ -1,0 +1,11 @@
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\addressbook\addressbook\bin\Debug\addressbook.exe.config
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\addressbook\addressbook\bin\Debug\addressbook.exe
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\addressbook\addressbook\bin\Debug\addressbook.pdb
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\addressbook\addressbook\obj\Debug\addressbook.csprojAssemblyReference.cache
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\addressbook\addressbook\obj\Debug\addressbook.Form1.resources
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\addressbook\addressbook\obj\Debug\addressbook.Properties.Resources.resources
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\addressbook\addressbook\obj\Debug\addressbook.csproj.GenerateResource.cache
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\addressbook\addressbook\obj\Debug\addressbook.csproj.CoreCompileInputs.cache
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\addressbook\addressbook\obj\Debug\addressbook.exe
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\addressbook\addressbook\obj\Debug\addressbook.pdb
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\addressbook\addressbook\obj\Debug\addressbook.Form2.resources
