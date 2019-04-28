@@ -1,0 +1,53 @@
+C:\Users\kylea\source\repos\produce quantity\produce quantity\bin\Debug\produce quantity.exe.config
+C:\Users\kylea\source\repos\produce quantity\produce quantity\bin\Debug\produce quantity.exe
+C:\Users\kylea\source\repos\produce quantity\produce quantity\bin\Debug\produce quantity.pdb
+C:\Users\kylea\source\repos\produce quantity\produce quantity\obj\Debug\produce quantity.csprojAssemblyReference.cache
+C:\Users\kylea\source\repos\produce quantity\produce quantity\obj\Debug\produce_quantity.Form1.resources
+C:\Users\kylea\source\repos\produce quantity\produce quantity\obj\Debug\produce_quantity.Properties.Resources.resources
+C:\Users\kylea\source\repos\produce quantity\produce quantity\obj\Debug\produce quantity.csproj.GenerateResource.cache
+C:\Users\kylea\source\repos\produce quantity\produce quantity\obj\Debug\produce quantity.csproj.CoreCompileInputs.cache
+C:\Users\kylea\source\repos\produce quantity\produce quantity\obj\Debug\produce quantity.exe
+C:\Users\kylea\source\repos\produce quantity\produce quantity\obj\Debug\produce quantity.pdb
+C:\Users\kylea\source\repos\produce quantity\produce quantity\obj\Debug\produce_quantity.Form2.resources
+C:\Users\kylea\source\repos\produce quantity\produce quantity\obj\Debug\produce_quantity.Form3.resources
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity\produce quantity\bin\Debug\produce quantity.exe.config
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity\produce quantity\bin\Debug\produce quantity.exe
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity\produce quantity\bin\Debug\produce quantity.pdb
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity\produce quantity\obj\Debug\produce quantity.csprojAssemblyReference.cache
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity\produce quantity\obj\Debug\produce_quantity.Form1.resources
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity\produce quantity\obj\Debug\produce_quantity.Form2.resources
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity\produce quantity\obj\Debug\produce_quantity.Form3.resources
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity\produce quantity\obj\Debug\produce_quantity.Properties.Resources.resources
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity\produce quantity\obj\Debug\produce quantity.csproj.GenerateResource.cache
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity\produce quantity\obj\Debug\produce quantity.csproj.CoreCompileInputs.cache
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity\produce quantity\obj\Debug\produce quantity.exe
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity\produce quantity\obj\Debug\produce quantity.pdb
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity_test\produce quantity\bin\Debug\produce quantity.exe.config
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity_test\produce quantity\bin\Debug\produce quantity.exe
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity_test\produce quantity\bin\Debug\produce quantity.pdb
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity_test\produce quantity\obj\Debug\produce quantity.csprojAssemblyReference.cache
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity_test\produce quantity\obj\Debug\produce_quantity.Form1.resources
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity_test\produce quantity\obj\Debug\produce_quantity.Form2.resources
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity_test\produce quantity\obj\Debug\produce_quantity.Form3.resources
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity_test\produce quantity\obj\Debug\produce_quantity.Properties.Resources.resources
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity_test\produce quantity\obj\Debug\produce quantity.csproj.GenerateResource.cache
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity_test\produce quantity\obj\Debug\produce quantity.csproj.CoreCompileInputs.cache
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity_test\produce quantity\obj\Debug\produce quantity.exe
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity_test\produce quantity\obj\Debug\produce quantity.pdb
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity_test\produce quantity\obj\Debug\produce_quantity.Form4.resources
+C:\Users\kylea\Desktop\test\produce quantity_test\produce quantity\bin\Debug\produce quantity.exe.config
+C:\Users\kylea\Desktop\test\produce quantity_test\produce quantity\bin\Debug\produce quantity.exe
+C:\Users\kylea\Desktop\test\produce quantity_test\produce quantity\bin\Debug\produce quantity.pdb
+C:\Users\kylea\Desktop\test\produce quantity_test\produce quantity\obj\Debug\produce quantity.csprojAssemblyReference.cache
+C:\Users\kylea\Desktop\test\produce quantity_test\produce quantity\obj\Debug\produce_quantity.Form1.resources
+C:\Users\kylea\Desktop\test\produce quantity_test\produce quantity\obj\Debug\produce_quantity.Form2.resources
+C:\Users\kylea\Desktop\test\produce quantity_test\produce quantity\obj\Debug\produce_quantity.Form3.resources
+C:\Users\kylea\Desktop\test\produce quantity_test\produce quantity\obj\Debug\produce_quantity.Form4.resources
+C:\Users\kylea\Desktop\test\produce quantity_test\produce quantity\obj\Debug\produce_quantity.Properties.Resources.resources
+C:\Users\kylea\Desktop\test\produce quantity_test\produce quantity\obj\Debug\produce quantity.csproj.GenerateResource.cache
+C:\Users\kylea\Desktop\test\produce quantity_test\produce quantity\obj\Debug\produce quantity.csproj.CoreCompileInputs.cache
+C:\Users\kylea\Desktop\test\produce quantity_test\produce quantity\obj\Debug\produce quantity.exe
+C:\Users\kylea\Desktop\test\produce quantity_test\produce quantity\obj\Debug\produce quantity.pdb
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity_test\produce quantity\bin\Debug\GroceryDB.mdf
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity_test\produce quantity\bin\Debug\GroceryDB_log.ldf
+C:\Users\kylea\Desktop\Kyle-Jensen-449.github.io\Assignments\produce quantity_test\produce quantity\obj\Debug\produce_quantity.Form5.resources

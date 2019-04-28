@@ -70,6 +70,7 @@
     <Compile Include="Form4.Designer.cs">
       <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
+    <Compile Include="itemInfo.cs" />
     <Compile Include="Objectssssss\Account.cs" />
     <Compile Include="Objectssssss\Category.cs" />
     <Compile Include="Objectssssss\GroceryItem.cs" />
