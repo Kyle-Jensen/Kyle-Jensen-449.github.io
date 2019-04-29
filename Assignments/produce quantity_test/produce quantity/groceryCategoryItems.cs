@@ -14,13 +14,15 @@ namespace produce_quantity
 {
     public partial class groceryCategoryItems : Form
     {
-        
+        //Initialize new list to store items selected
         string items = "";
         List<string> vs = new List<string>();
 
+        //Changes text of each title label based on the contents of
+        //the category object
         Category _Category;
         public groceryCategoryItems(Category category)
-        {
+        {   //depending on what category the user selects, this tells the forms labels to what it should display
             _Category = category;
             InitializeComponent();
             categoryName.Text = category._CategoryName;
@@ -32,7 +34,8 @@ namespace produce_quantity
 
            
         }
-        //test
+        //add to list event handler
+        //creates a .txt file of what the user selected for grocery items
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -42,33 +45,29 @@ namespace produce_quantity
                 string nameOfCategory = "";
 
                 nameOfCategory = _Category._CategoryName;
-
+                //Depending on what category the user selects, this will specify the text file name
                 outputFile = File.CreateText(_Category._CategoryName + ".txt");
 
-                //writeline of grocery item quantity 
-
-                //Item: Value
-                //Item2: Value
-
-
+                
+                //if textbox1-5 is empty, the text file will not display all the items within the category
                 if (!String.IsNullOrEmpty(textBox1.Text))
-                {
+                {   //0 is referencing label1
                     outputFile.WriteLine(_Category._Items.ElementAtOrDefault(0)._Name + ": " + textBox1.Text);
                 }
                 if (!String.IsNullOrEmpty(textBox2.Text))
-                {
+                {   //1 is referencing label2
                     outputFile.WriteLine(_Category._Items.ElementAtOrDefault(1)._Name + ": " + textBox2.Text);
                 }
                 if (!String.IsNullOrEmpty(textBox3.Text))
-                {
+                {   //2 is referencing label3
                     outputFile.WriteLine(_Category._Items.ElementAtOrDefault(2)._Name + ": " + textBox3.Text);
                 }
                 if (!String.IsNullOrEmpty(textBox4.Text))
-                {
+                {   //3 is referencing label4
                     outputFile.WriteLine(_Category._Items.ElementAtOrDefault(3)._Name + ": " + textBox4.Text);
                 }
                 if (!String.IsNullOrEmpty(textBox5.Text))
-                {
+                {   //4 is referencing label5
                     outputFile.WriteLine(_Category._Items.ElementAtOrDefault(4)._Name + ": " + textBox5.Text);
                 }
 
@@ -78,31 +77,32 @@ namespace produce_quantity
 
 
             }
+            //for catch exception 
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-
+        //opens groceryList
         private void button2_Click(object sender, EventArgs e)
         {
             groceryList f = new groceryList();
             f.Show();
             this.Hide();
         }
-
+        //Empty Event handler
         private void label6_Click(object sender, EventArgs e)
         {
 
         }
-
+        //goes back to groceryCategories form
         private void backButton_Click(object sender, EventArgs e)
         {
             groceryCategories f = new groceryCategories();
             f.Show();
             this.Hide();
         }
-
+        //loads data.txt by utilizing arrays, delimiters, and tokens
         private void Form1_Load(object sender, EventArgs e)
         {
             try
@@ -113,10 +113,10 @@ namespace produce_quantity
                 string lines;
 
                 while (!inputFile.EndOfStream)
-                {
+                {   //, is the dlimiter for txt file
                     lines = inputFile.ReadLine();
                     string[] tokens = lines.Split(',');
-
+                    //referencings iteminfo class for tokens
                     itemInfo items = new itemInfo(tokens[0], tokens[1], tokens[2], tokens[3], tokens[4], tokens[5]);
                     vs.Add(items.Item + ";" + items.Nutrient + ";" + items.Store + ";" + items.Store1 + ";" + items.Store2 + ";" + items.Fact);
 
@@ -137,7 +137,9 @@ namespace produce_quantity
             }
 
         }
-
+        //Event handler to adjust listbox based on what items are selected
+        //When a user clicks on an item the information of the item is outputted
+        //to form4 
         private void itemListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             items = itemListBox.SelectedItem.ToString();
@@ -168,6 +170,14 @@ namespace produce_quantity
         private int c = 0;
         private int d = 0;
         private int ee = 0;
+
+        //The following up ArrowPictureBox event handlers increment an int
+        //then converts the value into a string outputted to their respective textboxes
+
+        //The downArrowPictureBox event handlers decrement an int
+        //and converts the value into a string outputted to their respective textboxes
+        //Negative numbers will be caught using an if statement
+
         private void upArrowPictureBox_Click(object sender, EventArgs e)
         {
             a++;

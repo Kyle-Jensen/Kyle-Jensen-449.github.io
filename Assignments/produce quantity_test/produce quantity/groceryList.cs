@@ -18,10 +18,12 @@ namespace produce_quantity
         {
             InitializeComponent();
         }
-
+        //referecings GroceryItem class
         List<GroceryItem> listOfGroceries = new List<GroceryItem>();
-        
 
+        //opens and reads text file, produce.txt
+        //outputs the text into listbox
+        //listbox adds selected groceryitem that the user selected and quantity
         private void produceItems()
         {
             try
@@ -46,7 +48,9 @@ namespace produce_quantity
             }
         }
 
-
+        //opens and reads text file, canned.txt
+        //outputs the text into listbox
+        //listbox adds selected groceryitem that the user selected and quantity
         private void cannedItems()
         {
             try
@@ -69,7 +73,9 @@ namespace produce_quantity
                 MessageBox.Show(ex.Message);
             }
         }
-
+        //opens and reads text file, bakery.txt
+        //outputs the text into listbox
+        //listbox adds selected groceryitem that the user selected and quantity
         private void bakeryItems()
         {
             try
@@ -92,7 +98,9 @@ namespace produce_quantity
                 MessageBox.Show(ex.Message);
             }
         }
-
+        //opens and reads text file, dairy.txt
+        //outputs the text into listbox
+        //listbox adds selected groceryitem that the user selected and quantity
         private void dairyItems()
         {
             try
@@ -115,7 +123,9 @@ namespace produce_quantity
                 MessageBox.Show(ex.Message);
             }
         }
-
+        //opens and reads text file, deli.txt
+        //outputs the text into listbox
+        //listbox adds selected groceryitem that the user selected and quantity
         private void deliItems()
         {
             try
@@ -138,7 +148,9 @@ namespace produce_quantity
                 MessageBox.Show(ex.Message);
             }
         }
-
+        //opens and reads text file, frozen.txt
+        //outputs the text into listbox
+        //listbox adds selected groceryitem that the user selected and quantity
         private void frozenItems()
         {
             try
@@ -161,7 +173,9 @@ namespace produce_quantity
                 MessageBox.Show(ex.Message);
             }
         }
-
+        //opens and reads text file, meat.txt
+        //outputs the text into listbox
+        //listbox adds selected groceryitem that the user selected and quantity
         private void meatItems()
         {
             try
@@ -184,7 +198,9 @@ namespace produce_quantity
                 MessageBox.Show(ex.Message);
             }
         }
-
+        //opens and reads text file, packaged.txt
+        //outputs the text into listbox
+        //listbox adds selected groceryitem that the user selected and quantity
         private void packagedItems()
         {
             try
@@ -207,7 +223,9 @@ namespace produce_quantity
                 MessageBox.Show(ex.Message);
             }
         }
-
+        //opens and reads text file, seafood.txt
+        //outputs the text into listbox
+        //listbox adds selected groceryitem that the user selected and quantity
         private void seafoodItems()
         {
             try
@@ -235,6 +253,7 @@ namespace produce_quantity
         {
             
         }
+        //loads the items
         private void Form2_Load(object sender, EventArgs e)
         {
             produceItems();
@@ -247,14 +266,14 @@ namespace produce_quantity
             packagedItems();
             seafoodItems();
         }
-
+        //back to previous form
         private void backButton_Click(object sender, EventArgs e)
         {
             groceryCategories f = new groceryCategories();
             f.Show();
             this.Hide();
         }
-
+        //clears txt file and listboxes
         private void clearTextLabelButton_Click(object sender, EventArgs e)
         {
             File.WriteAllText("Produce.txt", String.Empty);
@@ -277,7 +296,9 @@ namespace produce_quantity
             listBox9.Items.Clear();
             listOfGroceries.Clear();
         }
-
+        //creates a text file called print
+        //text file contains items the user selected
+        //print dialog prompts up
         private void printButton_Click(object sender, EventArgs e)
         {
             StreamWriter outputFile;

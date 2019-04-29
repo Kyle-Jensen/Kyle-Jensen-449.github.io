@@ -23,7 +23,7 @@ namespace produce_quantity
             this.grocery_ItemsTableAdapter.Fill(this.groceryDBDataSet.Grocery_Items);
 
         }
-
+        //goes back to groceryCategories form
         private void button1_Click(object sender, EventArgs e)
         {
             groceryCategories f = new groceryCategories();

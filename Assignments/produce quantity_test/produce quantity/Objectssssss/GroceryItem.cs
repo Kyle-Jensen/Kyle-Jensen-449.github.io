@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace produce_quantity.Objectssssss
 {
     public class GroceryItem
-    {
+    {   //wasn't needed
+        //this was for a potential different way to output item information
         public string _Name;
         public List<string> _Stores = new List<string>();
         public List<string> _Nutrients = new List<string>();
