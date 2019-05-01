@@ -26,7 +26,7 @@ namespace produce_quantity.Objectssssss
             _Store2 = Store2;
             _Fact = Fact;
         }
-        //for name 
+        //for item
         public string Item
         {
             get
@@ -38,7 +38,7 @@ namespace produce_quantity.Objectssssss
                 _Item = value;
             }
         }
-        //for email
+        //for nurtient
         public string Nutrient
         {
             get
@@ -50,7 +50,7 @@ namespace produce_quantity.Objectssssss
                 _Nutrient = value;
             }
         }
-        //for phone
+        //for store
         public string Store
         {
             get
@@ -62,7 +62,7 @@ namespace produce_quantity.Objectssssss
                 _Store = value;
             }
         }
-
+        //for store1
         public string Store1
         {
             get
@@ -74,6 +74,7 @@ namespace produce_quantity.Objectssssss
                 _Store1 = value;
             }
         }
+        //for store2
         public string Store2
         {
             get
@@ -85,6 +86,7 @@ namespace produce_quantity.Objectssssss
                 _Store2 = value;
             }
         }
+        //for fact
         public string Fact
         {
             get

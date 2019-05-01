@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace produce_quantity
 {
-    public partial class Form5 : Form
+    public partial class itemLocation : Form
     {
-        public Form5()
+        public itemLocation()
         {
             InitializeComponent();
         }
@@ -23,10 +23,10 @@ namespace produce_quantity
             this.grocery_ItemsTableAdapter.Fill(this.groceryDBDataSet.Grocery_Items);
 
         }
-
+        //goes back to groceryCategories form
         private void button1_Click(object sender, EventArgs e)
         {
-            Form3 f = new Form3();
+            groceryCategories f = new groceryCategories();
             f.Show();
             this.Hide();
         }

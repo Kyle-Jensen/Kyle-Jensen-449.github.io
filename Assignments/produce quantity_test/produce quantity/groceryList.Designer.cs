@@ -1,6 +1,6 @@
 ﻿namespace produce_quantity
 {
-    partial class Form2
+    partial class groceryList
     {
         /// <summary>
         /// Required designer variable.
@@ -290,7 +290,7 @@
             this.Controls.Add(this.listBox1);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "Grocery List";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

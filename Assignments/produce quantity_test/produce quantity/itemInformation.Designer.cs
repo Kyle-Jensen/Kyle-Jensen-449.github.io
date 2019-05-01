@@ -1,6 +1,6 @@
 ﻿namespace produce_quantity
 {
-    partial class Form4
+    partial class itemInformation
     {
         /// <summary>
         /// Required designer variable.
@@ -49,7 +49,7 @@
             this.Controls.Add(this.exitButton);
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form4";
+            this.Text = "Item Information";
             this.ResumeLayout(false);
 
         }

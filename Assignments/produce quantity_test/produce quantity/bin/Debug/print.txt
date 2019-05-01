@@ -1,10 +1,45 @@
-Brocoli: 3
-Tuna: 2
-Sliced Beans: 3
-Muffin: 4
-Eggs: 3
-Sandwich: 4
-Frozen Vegetables: 4
-Chicken: 3
-Fruit Snacks: 3
-Lobster: 3
+Apple: 123
+Brocoli: 123
+Potato: 123
+Pear: 123
+Corn: 123
+Tuna: 132
+Baked Beans: 123
+Spam: 123
+Sliced Beans: 123
+Canned Tomatoes: 123
+Bread: 123
+Muffin: 123
+Pie: 123
+Cookie: 123
+Buns: 123
+Milk: 123
+Butter: 123
+Eggs: 123
+Cream: 123
+Yogurt: 123
+Sandwich: 123
+Salad: 123
+Wrap: 132
+Sliced Meat: 123
+Sliced Cheese: 123
+Icecream: 123
+Frozen Vegetables: 123
+Frozen Fruits: 123
+Frozen Pizza: 123
+Frozen Pretzel: 123
+Steak: 123
+Chicken: 123
+Pork: 123
+Lamb: 123
+Veal: 123
+Cereal: 123
+Chips: 123
+Crackers: 123
+Popcorn: 123
+Fruit Snacks: 123
+Salmon: 123
+Trout: 123
+Shrimp: 123
+Crab: 123
+Lobster: 123
